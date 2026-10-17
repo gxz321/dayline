@@ -19,9 +19,11 @@ export function createAuth({passwordHash,sessionSecret,secure,now=Date.now}){
   const name=secure?'__Host-dayline_session':'dayline_session';
   const sign=value=>createHmac('sha256',sessionSecret||'disabled').update(value).digest('base64url');
   const expire=()=>{const at=now();for(const[id,until]of sessions)if(until<=at)sessions.delete(id);for(const[key,row]of attempts)if(row.until<=at)attempts.delete(key);};
-  function token(headers){const cookie=headers.get('cookie')||'';if(cookie.length>8192)return null;const rows=cookie.split(';').map(v=>v.trim()).filter(v=>v.startsWith(name+'='));if(rows.length!==1)return null;const raw=rows[0].slice(name.length+1);if(!/^[A-Za-z0-9_-]{43}\.[A-Za-z0-9_-]{43}$/.test(raw))return null;const [id,signature]=raw.split('.'),expected=sign(id);return timingSafeEqual(Buffer.from(signature),Buffer.from(expected))&&sessions.get(id)>now()?id:null;}
+  function verified(raw){if(typeof raw!=='string'||!/^[A-Za-z0-9_-]{43}\.[A-Za-z0-9_-]{43}$/.test(raw))return null;const [id,signature]=raw.split('.'),expected=sign(id);return timingSafeEqual(Buffer.from(signature),Buffer.from(expected))&&sessions.get(id)>now()?id:null;}
+  function token(headers){const cookie=headers.get('cookie')||'';if(cookie.length>8192)return null;const rows=cookie.split(';').map(v=>v.trim()).filter(v=>v.startsWith(name+'='));return rows.length===1?verified(rows[0].slice(name.length+1)):null;}
+  const bearer=headers=>{const value=headers.get('authorization')||'';return value.startsWith('Bearer ')?verified(value.slice(7)):null;};
   const cookie=(value,maxAge)=>`${name}=${value}; Path=/; HttpOnly; SameSite=Strict; Max-Age=${maxAge}${secure?'; Secure':''}`;
-  return {configured,authenticated(headers){expire();return configured&&!!token(headers);},logout(headers){const id=token(headers);if(id)sessions.delete(id);return cookie('',0);},async login(password,address){
+  return {configured,authenticated(headers){expire();return configured&&!!token(headers);},authenticatedBearer(headers){expire();return configured&&!!bearer(headers);},logoutBearer(headers){const id=bearer(headers);if(id)sessions.delete(id);},logout(headers){const id=token(headers);if(id)sessions.delete(id);return cookie('',0);},async login(password,address){
     if(!configured)return {status:503,code:'not_configured'};expire();const at=now(),keys=['global','ip:'+address];
     if(keys.some(key=>(attempts.get(key)?.count||0)>=(key==='global'?50:5))||inFlight>=2)return {status:429,code:'rate_limit'};
     // Bounded map: reverse-proxy headers are deliberately ignored.
@@ -30,6 +32,6 @@ export function createAuth({passwordHash,sessionSecret,secure,now=Date.now}){
     inFlight++;let verified=false;try{verified=await verifyPassword(password,passwordHash);}finally{inFlight--;}
     if(!verified)return {status:401,code:'invalid_credentials'};
     const id=randomBytes(32).toString('base64url');if(sessions.size>=32)sessions.delete(sessions.keys().next().value);sessions.set(id,at+TTL);
-    return {status:200,cookie:cookie(id+'.'+sign(id),TTL/1000)};
+    const accessToken=id+'.'+sign(id);return {status:200,cookie:cookie(accessToken,TTL/1000),accessToken,expiresAt:at+TTL};
   }};
 }

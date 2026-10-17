@@ -16,7 +16,8 @@ export function standaloneConfig(env={}){
   if(env.PUBLIC_ORIGIN){let u;try{u=new URL(env.PUBLIC_ORIGIN);}catch{throw Error('Invalid PUBLIC_ORIGIN');}if(u.href!==u.origin+'/'||u.username||u.password||u.search||u.hash||u.protocol!=='https:'&&!(u.protocol==='http:'&&['127.0.0.1','localhost','[::1]'].includes(u.hostname)))throw Error('PUBLIC_ORIGIN must be an exact HTTPS origin');origin=u.origin;}
   if(production&&(!origin||!origin.startsWith('https://')))throw Error('Production requires PUBLIC_ORIGIN=https://your-domain');
   if(!production&&!origin&&!['127.0.0.1','localhost','::1'].includes(host))throw Error('Non-loopback hosting requires PUBLIC_ORIGIN');
-  return {production,host,port,origin,dataDir:resolve(env.DATA_DIR||resolve(import.meta.dirname,'.data')),autoRefresh:env.AUTO_REFRESH==='true',passwordHash:env.STANDALONE_PASSWORD_HASH,sessionSecret:env.STANDALONE_SESSION_SECRET};
+  let bridgeOrigin=null;if(env.BRIDGE_ORIGIN){let u;try{u=new URL(env.BRIDGE_ORIGIN);}catch{throw Error('Invalid BRIDGE_ORIGIN');}if(u.protocol!=='https:'||u.href!==u.origin+'/'||u.username||u.password||u.search||u.hash)throw Error('BRIDGE_ORIGIN must be an exact HTTPS origin');bridgeOrigin=u.origin;}
+  return {production,host,port,origin,bridgeOrigin,dataDir:resolve(env.DATA_DIR||resolve(import.meta.dirname,'.data')),autoRefresh:env.AUTO_REFRESH==='true',passwordHash:env.STANDALONE_PASSWORD_HASH,sessionSecret:env.STANDALONE_SESSION_SECRET};
 }
 export function stripSitesHeaders(input){const headers=new Headers();for(const[key,value]of new Headers(input)){const lower=key.toLowerCase();if(lower.startsWith('oai-authenticated-user-')||lower==='oai-sites-authorization'||lower.startsWith('x-forwarded-')||lower==='forwarded'||lower==='host')continue;headers.set(key,value);}return headers;}
 async function readBody(request,max=60000){
@@ -58,10 +59,41 @@ export async function createStandaloneServer({env={},worker,bucket,now=Date.now}
   }
   const server=createServer(async(incoming,outgoing)=>{
     try{
-      const origin=originFor();if(incoming.headers.host!==new URL(origin).host)return send(json({error:'Invalid host',code:'host'},421));
+      const origin=originFor();if(incoming.method==='GET'&&incoming.url==='/healthz')return send(json({ok:true}));
+      if(incoming.headers.host!==new URL(origin).host)return send(json({error:'Invalid host',code:'host'},421));
       if(!incoming.url?.startsWith('/')||incoming.url.startsWith('//'))return send(json({error:'Invalid path'},400));
       const url=new URL(incoming.url,origin),headers=stripSitesHeaders(incoming.headers),method=incoming.method||'GET';
       const authenticated=auth.authenticated(headers);
+      if(url.pathname.startsWith('/bridge/')){
+        const methods={'/bridge/session':'GET','/bridge/status':'GET','/bridge/login':'POST','/bridge/logout':'POST','/bridge/chat':'POST'};
+        if(!config.bridgeOrigin||!methods[url.pathname]||url.search)return send(json({error:'Not found'},404));
+        if(headers.get('origin')!==config.bridgeOrigin)return send(json({error:'Origin not allowed',code:'origin'},403));
+        const cors=response=>{const next=new Headers(response.headers);next.set('Access-Control-Allow-Origin',config.bridgeOrigin);next.set('Vary','Origin');next.set('Access-Control-Expose-Headers','Retry-After');return new Response(response.body,{status:response.status,headers:next});};
+        const finish=response=>send(cors(response));
+        if(method==='OPTIONS'){
+          const requested=(headers.get('access-control-request-headers')||'').toLowerCase().split(',').map(x=>x.trim()).filter(Boolean);
+          if(headers.get('access-control-request-method')!==methods[url.pathname]||requested.some(x=>!['authorization','content-type'].includes(x)))return finish(json({error:'Preflight denied'},403));
+          return finish(new Response(null,{status:204,headers:{'Access-Control-Allow-Methods':methods[url.pathname],'Access-Control-Allow-Headers':'Authorization, Content-Type','Access-Control-Max-Age':'600'}}));
+        }
+        if(method!==methods[url.pathname])return finish(json({error:'Method not allowed'},405));
+        const signedIn=auth.authenticatedBearer(headers);
+        if(url.pathname==='/bridge/session')return finish(json({mode:'bridge',authenticated:signedIn,configured:auth.configured}));
+        if(url.pathname==='/bridge/login'||url.pathname==='/bridge/logout'){
+          const body=await jsonBody(incoming,2048);
+          if(!body||typeof body!=='object'||Array.isArray(body)||Object.keys(body).some(k=>url.pathname.endsWith('/login')?k!=='password':true))return finish(json({error:'Invalid request'},400));
+          if(url.pathname.endsWith('/logout')){auth.logoutBearer(headers);return finish(json({ok:true}));}
+          if(typeof body.password!=='string'||body.password.length<1||body.password.length>256)return finish(json({error:'Invalid password',code:'invalid_credentials'},400));
+          const result=await auth.login(body.password,incoming.socket.remoteAddress||'unknown');
+          return finish(json(result.status===200?{ok:true,accessToken:result.accessToken,expiresAt:result.expiresAt}:{error:'Login failed',code:result.code},result.status));
+        }
+        if(url.pathname==='/bridge/chat'&&!signedIn)return finish(json({error:auth.configured?'请先登录私人助手':'私人登录尚未配置',code:auth.configured?'sign_in':'not_configured',maybeCharged:false},auth.configured?401:503));
+        // Only this authenticated adapter supplies the worker's owner identity.
+        headers.delete('cookie');headers.delete('authorization');headers.set('origin',origin);headers.set('sec-fetch-site','same-origin');
+        if(signedIn)headers.set('oai-authenticated-user-id',OWNER);
+        let body;if(method==='POST')body=await readBody(incoming);
+        const path=url.pathname==='/bridge/status'?'/api/chat/status':'/api/chat';
+        return finish(await worker.fetch(new Request(origin+path,{method,headers,...(body?{body}:{})}),runtimeEnv,ctx));
+      }
       if(url.pathname==='/api/session'){if(method!=='GET')return send(json({error:'Method not allowed'},405,{Allow:'GET'}));return send(json({mode:'standalone',authenticated,configured:auth.configured,authConfigured:auth.configured}));}
       if(url.pathname==='/api/login'||url.pathname==='/api/logout'){
         if(method!=='POST')return send(json({error:'Method not allowed'},405,{Allow:'POST'}));
@@ -103,6 +135,7 @@ export async function createStandaloneServer({env={},worker,bucket,now=Date.now}
     }catch(error){if(!outgoing.headersSent)send(json({error:error?.status?'请求格式无效或超过限制。':'服务暂不可用；未记录问题内容。',code:'request_failed'},error?.status||500));else outgoing.end();}
     async function send(response){
       if(outgoing.destroyed)return;const headers=Object.fromEntries(response.headers);headers['x-content-type-options']='nosniff';headers['referrer-policy']='strict-origin-when-cross-origin';headers['x-frame-options']='DENY';
+      if(config.bridgeOrigin&&incoming.url?.startsWith('/bridge/')&&incoming.headers.origin===config.bridgeOrigin){headers['access-control-allow-origin']=config.bridgeOrigin;headers.vary='Origin';headers['access-control-expose-headers']='Retry-After';}
       if(config.production)headers['strict-transport-security']='max-age=31536000';
       outgoing.writeHead(response.status,headers);outgoing.end(incoming.method==='HEAD'?undefined:Buffer.from(await response.arrayBuffer()));
     }

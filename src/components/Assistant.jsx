@@ -1,12 +1,12 @@
-import {IS_PAGES,pagesChatStatus} from '../lib/deployment.js';
+import {IS_PAGES} from '../lib/deployment.js';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { formatDate, todayISO } from '../lib/calendar.js';
-import { CHAT_MAX_CONTENT, CHAT_MAX_MESSAGES, CHAT_STORAGE_KEY, chatError, chatExport, chatId, chatText, createChatPayload, loadChat, nextPlanStep, planContext, replyTaskDraft, saveChat, validateChatReply, validateChatStatus } from '../lib/chat-client.js';
+import { CHAT_MAX_CONTENT, CHAT_MAX_MESSAGES, CHAT_STORAGE_KEY, chatError, chatExport, chatId, chatText, createChatPayload, loadChat, nextPlanStep, planContext, replyTaskDraft, saveChat, validateChatReply } from '../lib/chat-client.js';
 import { nextActions } from '../lib/next-actions.js';
 import WebAI from './WebAI.jsx';
 import Modal from './Modal.jsx';
 import ConnectionPanel from './ConnectionPanel.jsx';
-import {readRuntimeSession} from '../lib/runtime-session.js';
+import {assistantFetch,readAssistantConnection} from '../lib/assistant-service.js';
 import './Assistant.css';
 import './AssistantCalm.css';
 
@@ -55,15 +55,15 @@ export default function Assistant({ state, date, onNavigate, onProposal }) {
   const [chatHeight, setChatHeight] = useState(null);
   const active = useRef(null), statusActive = useRef(null), alive = useRef(true), composing = useRef(false), textarea = useRef(null), end = useRef(null), shell = useRef(null), confirmDialog = useRef(null), clearOpener = useRef(null);
   const ready = !statusError && status?.authenticated && status.allowed && status.configured && status.enabled;
+  const offlinePages=IS_PAGES&&runtime.mode!=='bridge';
   const canSend = ready && status.limits.remaining !== 0;
   const needsLogin=!!status&&!status.authenticated&&(runtime.configured||(runtime.mode==='sites'&&status.configured&&status.enabled));
   const checkStatus = useCallback(async ({force=false}={}) => {
-    if(IS_PAGES){setRuntime({mode:'pages',authenticated:false,configured:false});setStatus(pagesChatStatus());setStatusError('');setStatusLoading(false);return;}
     if (statusActive.current && !force) return;
     statusActive.current?.abort();
     const controller = new AbortController(); statusActive.current = controller; setStatusLoading(true); setStatusError('');
     const timer = setTimeout(() => controller.abort(), 12000);
-    try { const [response,session] = await Promise.all([fetch('/api/chat/status', { signal: controller.signal, cache: 'no-store', credentials: 'same-origin' }),readRuntimeSession(controller.signal).catch(()=>({mode:'unknown',authenticated:false,configured:false}))]); const data = validateChatStatus(await response.json()); if (alive.current && statusActive.current === controller){setStatus(data);setRuntime(session);} }
+    try { const connection=await readAssistantConnection(controller.signal,{force});if(alive.current&&statusActive.current===controller){setStatus(connection.status);setRuntime(connection.session);} }
     catch { if (alive.current && statusActive.current === controller) setStatusError('暂时无法读取服务状态。请稍后检查连接；本机计划仍然可用。'); }
     finally { clearTimeout(timer); if (statusActive.current === controller) { statusActive.current = null; if (alive.current) setStatusLoading(false); } }
   }, []);
@@ -103,7 +103,7 @@ export default function Assistant({ state, date, onNavigate, onProposal }) {
   }, []);
   async function send(event) {
     event?.preventDefault();
-    if (IS_PAGES || active.current || !input.trim() || !canSend) return;
+    if (active.current || !input.trim() || !canSend) return;
     let requestId;
     try { requestId = chatId(); } catch (e) { setIssue({ message: e.message }); return; }
     const next = [...messages, { id: chatId(), role: 'user', content: chatText(input.trim()), at: new Date().toISOString() }].slice(-CHAT_MAX_MESSAGES);
@@ -111,7 +111,7 @@ export default function Assistant({ state, date, onNavigate, onProposal }) {
     const controller = new AbortController(); active.current = controller; persist(next); setBusy(true); setInput(''); setIncludeContext(false); setIssue(null); setNotice('');
     const timer = setTimeout(() => controller.abort(), 35000);
     try {
-      const response = await fetch('/api/chat', { method: 'POST', credentials: 'same-origin', cache: 'no-store', headers: { 'Content-Type': 'application/json' }, signal: controller.signal, body: JSON.stringify(body) });
+      const response = await assistantFetch('chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: controller.signal, body: JSON.stringify(body) });
       const raw = await response.json();
       if (!alive.current || active.current !== controller) return;
       if (!response.ok) { const error = chatError(raw, response.status); setIssue(error); if ([401, 403, 503].includes(response.status)) checkStatus(); return; }
@@ -127,17 +127,17 @@ export default function Assistant({ state, date, onNavigate, onProposal }) {
     const blob = new Blob([chatExport(messages)], { type: 'application/json;charset=utf-8' }); const url = URL.createObjectURL(blob); const link = document.createElement('a'); link.href = url; link.download = `Dayline-对话-${todayISO()}.json`; document.body.append(link); link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000); setNotice('已导出本地会话。文件含你的聊天内容，请妥善保存。');
   }
   function clear() { try { localStorage.removeItem(CHAT_STORAGE_KEY); } catch { setStorageError('浏览器未允许删除本地记录，请在 Safari 网站数据中清理。'); } setMessages([]); setClearConfirm(false); setIssue(null); setNotice('当前页面会话已清空。'); }
-  function quick(value) { if(IS_PAGES){setWebQuestion(value);setMode('web');return;}setInput(value); textarea.current?.focus(); }
+  function quick(value) { if(offlinePages){setWebQuestion(value);setMode('web');return;}setInput(value); textarea.current?.focus(); }
   return <section className="assistant-page assistant-calm" aria-labelledby="assistant-title">
-    <header className="assistant-calm-heading"><h1 id="assistant-title">助手</h1><details className="assistant-session-menu"><summary>会话<span aria-hidden="true">⌄</span></summary><div><button type="button" onClick={()=>setConnectionOpen(true)}>{IS_PAGES?'服务说明':'服务与登录'}</button><button type="button" onClick={download} disabled={!messages.length||busy}>导出对话</button><button type="button" disabled={!messages.length||busy} onClick={()=>{clearOpener.current=document.activeElement;setClearConfirm(true)}}>清空本机对话</button></div></details></header>
-    <div className={`assistant-calm-status ${ready?'is-ready':''}`} aria-label="AI 连接状态"><span className="assistant-state-dot"/><div><strong>{IS_PAGES?'私人 AI 尚未连接':statusLoading?'正在检查连接':statusError?'暂时无法确认连接':ready?status.limits.remaining===0?'今日对话次数已用完':verified?'已收到真实回复':'模型已配置':needsLogin?'登录后开始对话':status?.authenticated&&status.configured&&status.enabled?'此账号尚未获授权':'尚未连接模型'}</strong><span>{IS_PAGES?'本机计划工具可直接使用。':statusError?'计划仍可正常使用。':ready?status.limits.remaining===0?'明天恢复使用，今天仍可整理本机计划。':'在这里发送问题，回复后可转成任务。':'连接后，就能在这一页继续聊。'}</span></div><button type="button" onClick={()=>setConnectionOpen(true)}>{IS_PAGES?'说明':needsLogin?'登录':'配置'}</button></div>
+    <header className="assistant-calm-heading"><h1 id="assistant-title">助手</h1><details className="assistant-session-menu"><summary>会话<span aria-hidden="true">⌄</span></summary><div><button type="button" onClick={()=>setConnectionOpen(true)}>{offlinePages?'服务说明':'服务与登录'}</button><button type="button" onClick={download} disabled={!messages.length||busy}>导出对话</button><button type="button" disabled={!messages.length||busy} onClick={()=>{clearOpener.current=document.activeElement;setClearConfirm(true)}}>清空本机对话</button></div></details></header>
+    <div className={`assistant-calm-status ${ready?'is-ready':''}`} aria-label="AI 连接状态"><span className="assistant-state-dot"/><div><strong>{offlinePages?'私人 AI 尚未连接':statusLoading?'正在检查连接':statusError?'暂时无法确认连接':ready?status.limits.remaining===0?'今日对话次数已用完':verified?'已收到真实回复':'模型已配置':needsLogin?'登录后开始对话':status?.authenticated&&status.configured&&status.enabled?'此账号尚未获授权':'尚未连接模型'}</strong><span>{offlinePages?'本机计划工具可直接使用。':statusError?'计划仍可正常使用。':ready?status.limits.remaining===0?'明天恢复使用，今天仍可整理本机计划。':'在这里发送问题，回复后可转成任务。':'连接后，就能在这一页继续聊。'}</span></div><button type="button" onClick={()=>setConnectionOpen(true)}>{offlinePages?'说明':needsLogin?'登录':'配置'}</button></div>
     <div className="assistant-chat-shell" ref={shell} style={chatHeight?{height:`${chatHeight}px`}:undefined}>
       <div className="assistant-messages" role="log" aria-label="对话消息" aria-live="polite" aria-relevant="additions" aria-busy={busy}>
-        {!messages.length?<div className="assistant-calm-welcome"><h2>想清楚，然后行动。</h2><div><button type="button" onClick={()=>IS_PAGES?setMode('tools'):quick(QUICK[0])}><Glyph name="spark"/>今天先做什么</button><button type="button" onClick={()=>quick(QUICK[1])}><Glyph name="plus"/>{IS_PAGES?'整理讨论问题':'一起推敲一个想法'}</button></div></div>:messages.map(message=><Message key={message.id} message={message} onCopy={copy} onProposal={onProposal}/>)}
+        {!messages.length?<div className="assistant-calm-welcome"><h2>想清楚，然后行动。</h2><div><button type="button" onClick={()=>offlinePages?setMode('tools'):quick(QUICK[0])}><Glyph name="spark"/>今天先做什么</button><button type="button" onClick={()=>quick(QUICK[1])}><Glyph name="plus"/>{offlinePages?'整理讨论问题':'一起推敲一个想法'}</button></div></div>:messages.map(message=><Message key={message.id} message={message} onCopy={copy} onProposal={onProposal}/>)}
         {busy?<div className="assistant-thinking"><span/><span/><span/><p>等待模型回复</p></div>:null}
         {issue?<div className="assistant-request-error" role="alert"><strong>这次还没有收到完整回复</strong><p>{issue.message}</p>{issue.retryAfter?<p>建议至少等待 {issue.retryAfter} 秒。</p>:null}<button type="button" onClick={()=>setConnectionOpen(true)}>检查连接</button><button type="button" onClick={()=>{setWebQuestion(messages.filter(message=>message.role==='user').at(-1)?.content||input);setMode('web')}}>改用网页版</button></div>:null}<div ref={end}/>
       </div>
-      <form className="assistant-composer" onSubmit={send}><label className="assistant-context-option"><input type="checkbox" checked={includeContext} disabled={busy||IS_PAGES} onChange={e=>setIncludeContext(e.target.checked)}/><span>这次附上 {date.slice(5).replace('-','月')}日的安排</span></label>{includeContext?<p className="assistant-privacy-hint">仅发送有限标题、时间、完成状态与目标摘要，不附备注、预算或验收证据。</p>:null}<div className="assistant-input-row"><textarea ref={textarea} aria-label="发给 AI 的消息" placeholder="和我聊聊你的安排…" value={input} maxLength={CHAT_MAX_CONTENT} rows={2} disabled={busy} onChange={e=>setInput(e.target.value)} onCompositionStart={()=>{composing.current=true}} onCompositionEnd={()=>{composing.current=false}} onKeyDown={e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.nativeEvent.isComposing&&!composing.current&&e.keyCode!==229&&!('ontouchstart' in window)){e.preventDefault();send(e)}}}/>{busy?<button type="button" className="assistant-stop" onClick={()=>active.current?.abort()} aria-label="停止等待回复"><Glyph name="stop"/></button>:<button type="submit" className="assistant-send" disabled={!input.trim()||!canSend} aria-label="发送消息"><Glyph name="send"/></button>}</div>{input.length>1800?<div className="assistant-composer-note"><span>最多 2000 字符</span><span>{input.length}/2000</span></div>:null}<div className="assistant-secondary-actions"><button type="button" onClick={()=>{setWebQuestion(input.trim()||messages.filter(message=>message.role==='user').at(-1)?.content||'');setMode('web')}}>使用网页版</button><span>·</span><button type="button" onClick={()=>setMode('tools')}>计划工具</button></div></form>
+      <form className="assistant-composer" onSubmit={send}><label className="assistant-context-option"><input type="checkbox" checked={includeContext} disabled={busy||offlinePages} onChange={e=>setIncludeContext(e.target.checked)}/><span>这次附上 {date.slice(5).replace('-','月')}日的安排</span></label>{includeContext?<p className="assistant-privacy-hint">仅发送有限标题、时间、完成状态与目标摘要，不附备注、预算或验收证据。</p>:null}<div className="assistant-input-row"><textarea ref={textarea} aria-label="发给 AI 的消息" placeholder="和我聊聊你的安排…" value={input} maxLength={CHAT_MAX_CONTENT} rows={2} disabled={busy} onChange={e=>setInput(e.target.value)} onCompositionStart={()=>{composing.current=true}} onCompositionEnd={()=>{composing.current=false}} onKeyDown={e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.nativeEvent.isComposing&&!composing.current&&e.keyCode!==229&&!('ontouchstart' in window)){e.preventDefault();send(e)}}}/>{busy?<button type="button" className="assistant-stop" onClick={()=>active.current?.abort()} aria-label="停止等待回复"><Glyph name="stop"/></button>:<button type="submit" className="assistant-send" disabled={!input.trim()||!canSend} aria-label="发送消息"><Glyph name="send"/></button>}</div>{input.length>1800?<div className="assistant-composer-note"><span>最多 2000 字符</span><span>{input.length}/2000</span></div>:null}<div className="assistant-secondary-actions"><button type="button" onClick={()=>{setWebQuestion(input.trim()||messages.filter(message=>message.role==='user').at(-1)?.content||'');setMode('web')}}>使用网页版</button><span>·</span><button type="button" onClick={()=>setMode('tools')}>计划工具</button></div></form>
     </div>
     {storageError?<p className="assistant-storage-note" role="alert">{storageError}</p>:null}
     {connectionOpen?<ConnectionPanel session={runtime} status={status} onCheck={checkStatus} onClose={()=>setConnectionOpen(false)}/>:null}

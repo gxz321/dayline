@@ -1,0 +1,941 @@
+{
+  "revision": "flex-2026-10-14",
+  "effectiveDate": "2026-10-14",
+  "title": "周三与周五自由窗口重排",
+  "targetIds": [
+    "evt-2-09",
+    "evt-4-02",
+    "evt-4-10",
+    "evt-4-11"
+  ],
+  "variants": {
+    "standard": {
+      "label": "学业科研与小服务",
+      "growthHours": 26,
+      "summary": "新增科研3h、课程交付2.5h、小服务验证1h；保留2.5h休息恢复。",
+      "events": [
+        {
+          "id": "evt-2-09",
+          "sourceIndex": 37,
+          "weekday": 2,
+          "start": "13:30",
+          "end": "17:00",
+          "title": "科研、课程交付与弹性",
+          "category": "research",
+          "notes": "周三下午自由安排；科研90min、补弱60min，保留60min恢复。",
+          "sourceStatus": "2026-10-14用户确认自由窗口；建议重新分配",
+          "status": "pending",
+          "fixed": false,
+          "optional": true,
+          "editable": true,
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          },
+          "flags": [],
+          "segments": [
+            {
+              "start": "13:30",
+              "end": "15:00",
+              "title": "科研深度工作",
+              "category": "research",
+              "notes": "完成一个评测协议、日志或实验结果，不切换项目",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            },
+            {
+              "start": "15:00",
+              "end": "15:30",
+              "title": "休息与活动",
+              "category": "buffer",
+              "notes": "",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            },
+            {
+              "start": "15:30",
+              "end": "16:30",
+              "title": "项目课交付与课程补弱",
+              "category": "study",
+              "notes": "免出勤仍有任务时先完成智能控制项目；其余补机械设计/机器人学",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            },
+            {
+              "start": "16:30",
+              "end": "17:00",
+              "title": "留白与家教前恢复",
+              "category": "buffer",
+              "notes": "",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            }
+          ],
+          "modified": false,
+          "scheduleHistory": {
+            "effectiveDate": "2026-10-14",
+            "previous": {
+              "id": "evt-2-09",
+              "sourceIndex": 37,
+              "weekday": 2,
+              "start": "13:30",
+              "end": "17:00",
+              "title": "智能控制项目一",
+              "category": "course",
+              "notes": "第5–8节智能控制项目一，含15–15:30课间",
+              "sourceStatus": "课表节次＋用户钟点",
+              "status": "confirmed",
+              "fixed": true,
+              "optional": false,
+              "editable": true,
+              "repeat": {
+                "type": "weekly",
+                "basis": "academic",
+                "weeksStart": 1,
+                "weeksEnd": 16,
+                "parity": "all"
+              },
+              "flags": [],
+              "segments": [
+                {
+                  "start": "13:30",
+                  "end": "15:00",
+                  "title": "智能控制项目一",
+                  "category": "course",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 16,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                },
+                {
+                  "start": "15:00",
+                  "end": "15:30",
+                  "title": "课间休息",
+                  "category": "buffer",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 16,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                },
+                {
+                  "start": "15:30",
+                  "end": "17:00",
+                  "title": "智能控制项目一",
+                  "category": "course",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 16,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "evt-4-02",
+          "sourceIndex": 59,
+          "weekday": 4,
+          "start": "08:00",
+          "end": "11:30",
+          "title": "科研与课程交付",
+          "category": "research",
+          "notes": "周五上午自由安排；科研90min、课程90min，休息30min。",
+          "sourceStatus": "2026-10-14用户确认自由窗口；建议重新分配",
+          "status": "pending",
+          "fixed": false,
+          "optional": true,
+          "editable": true,
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          },
+          "flags": [],
+          "segments": [
+            {
+              "start": "08:00",
+              "end": "09:30",
+              "title": "科研深度工作",
+              "category": "research",
+              "notes": "跑一批可复现实验或完成结果分析",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            },
+            {
+              "start": "09:30",
+              "end": "10:00",
+              "title": "休息与活动",
+              "category": "buffer",
+              "notes": "",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            },
+            {
+              "start": "10:00",
+              "end": "11:30",
+              "title": "项目课交付与课程补弱",
+              "category": "study",
+              "notes": "先完成仍需提交的智能控制/创业课任务，再补本周错题",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            }
+          ],
+          "modified": false,
+          "scheduleHistory": {
+            "effectiveDate": "2026-10-14",
+            "previous": {
+              "id": "evt-4-02",
+              "sourceIndex": 59,
+              "weekday": 4,
+              "start": "08:00",
+              "end": "11:30",
+              "title": "智能控制项目一",
+              "category": "course",
+              "notes": "第1–4节智能控制项目一，含课间；1–16周",
+              "sourceStatus": "课表节次＋用户钟点",
+              "status": "confirmed",
+              "fixed": true,
+              "optional": false,
+              "editable": true,
+              "repeat": {
+                "type": "weekly",
+                "basis": "academic",
+                "weeksStart": 1,
+                "weeksEnd": 16,
+                "parity": "all"
+              },
+              "flags": [],
+              "segments": [
+                {
+                  "start": "08:00",
+                  "end": "09:30",
+                  "title": "智能控制项目一",
+                  "category": "course",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 16,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                },
+                {
+                  "start": "09:30",
+                  "end": "10:00",
+                  "title": "课间休息",
+                  "category": "buffer",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 16,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                },
+                {
+                  "start": "10:00",
+                  "end": "11:30",
+                  "title": "智能控制项目一",
+                  "category": "course",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 16,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "evt-4-10",
+          "sourceIndex": 67,
+          "weekday": 4,
+          "start": "18:30",
+          "end": "20:10",
+          "title": "小服务验证与恢复",
+          "category": "opportunity",
+          "notes": "周五晚自由安排；验证60min，其余恢复。此为替换原课堂，无盈利承诺。",
+          "sourceStatus": "2026-10-14用户确认自由窗口；建议重新分配",
+          "status": "pending",
+          "fixed": false,
+          "optional": true,
+          "editable": true,
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          },
+          "flags": [],
+          "segments": [
+            {
+              "start": "18:30",
+              "end": "19:30",
+              "title": "可售小服务验证",
+              "category": "opportunity",
+              "notes": "选择一个服务：核实需求、做小样或交付；全周含获客沟通最多2h，不能另加2h",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            },
+            {
+              "start": "19:30",
+              "end": "20:10",
+              "title": "恢复与自由时间",
+              "category": "buffer",
+              "notes": "",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            }
+          ],
+          "modified": false,
+          "scheduleHistory": {
+            "effectiveDate": "2026-10-14",
+            "previous": {
+              "id": "evt-4-10",
+              "sourceIndex": 67,
+              "weekday": 4,
+              "start": "18:30",
+              "end": "20:10",
+              "title": "AI 与创新创业",
+              "category": "course",
+              "notes": "第9–10节AI与创新创业；1–12周；结束20:10待核实",
+              "sourceStatus": "节次确认；该结束点暂估",
+              "status": "needs_check",
+              "fixed": true,
+              "optional": false,
+              "editable": true,
+              "repeat": {
+                "type": "weekly",
+                "basis": "academic",
+                "weeksStart": 1,
+                "weeksEnd": 12,
+                "parity": "all"
+              },
+              "flags": [
+                "end_time_needs_check"
+              ],
+              "segments": [
+                {
+                  "start": "18:30",
+                  "end": "20:10",
+                  "title": "AI 与创新创业",
+                  "category": "course",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 12,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "evt-4-11",
+          "sourceIndex": 68,
+          "weekday": 4,
+          "start": "20:10",
+          "end": "20:30",
+          "title": "恢复与自由时间",
+          "category": "buffer",
+          "notes": "晚课与其返程取消，保留恢复，20:30后按原线上家教准备。",
+          "sourceStatus": "2026-10-14用户确认自由窗口；建议重新分配",
+          "status": "pending",
+          "fixed": false,
+          "optional": true,
+          "editable": true,
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          },
+          "flags": [],
+          "segments": [
+            {
+              "start": "20:10",
+              "end": "20:30",
+              "title": "恢复与自由时间",
+              "category": "buffer",
+              "notes": "",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            }
+          ],
+          "modified": false,
+          "scheduleHistory": {
+            "effectiveDate": "2026-10-14",
+            "previous": {
+              "id": "evt-4-11",
+              "sourceIndex": 68,
+              "weekday": 4,
+              "start": "20:10",
+              "end": "20:30",
+              "title": "生活与恢复",
+              "category": "life",
+              "notes": "回到安静授课地点",
+              "sourceStatus": "建议",
+              "status": "pending",
+              "fixed": false,
+              "optional": true,
+              "editable": true,
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              },
+              "flags": []
+            }
+          }
+        }
+      ]
+    },
+    "tutoring": {
+      "label": "可选两次理化家教",
+      "growthHours": 24,
+      "summary": "预留两次90min（含备课），新增科研2h、课程交付2.5h；暂停小服务验证，不预计收入。",
+      "events": [
+        {
+          "id": "evt-2-09",
+          "sourceIndex": 37,
+          "weekday": 2,
+          "start": "13:30",
+          "end": "17:00",
+          "title": "科研与理化家教预留",
+          "category": "research",
+          "notes": "可选版，每周至多两次新家教；这里只预留，不认定已成交。",
+          "sourceStatus": "2026-10-14用户确认自由窗口；建议重新分配",
+          "status": "pending",
+          "fixed": false,
+          "optional": true,
+          "editable": true,
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          },
+          "flags": [],
+          "segments": [
+            {
+              "start": "13:30",
+              "end": "15:00",
+              "title": "科研深度工作",
+              "category": "research",
+              "notes": "",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            },
+            {
+              "start": "15:00",
+              "end": "15:30",
+              "title": "休息与活动",
+              "category": "buffer",
+              "notes": "",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            },
+            {
+              "start": "15:30",
+              "end": "17:00",
+              "title": "新线上理化家教预留",
+              "category": "custom",
+              "notes": "未接受订单、未预约；可用30min备课＋30–60min上课，剩余时间恢复。与家长确认后编辑成真实授课时段。",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            }
+          ],
+          "modified": false,
+          "scheduleHistory": {
+            "effectiveDate": "2026-10-14",
+            "previous": {
+              "id": "evt-2-09",
+              "sourceIndex": 37,
+              "weekday": 2,
+              "start": "13:30",
+              "end": "17:00",
+              "title": "智能控制项目一",
+              "category": "course",
+              "notes": "第5–8节智能控制项目一，含15–15:30课间",
+              "sourceStatus": "课表节次＋用户钟点",
+              "status": "confirmed",
+              "fixed": true,
+              "optional": false,
+              "editable": true,
+              "repeat": {
+                "type": "weekly",
+                "basis": "academic",
+                "weeksStart": 1,
+                "weeksEnd": 16,
+                "parity": "all"
+              },
+              "flags": [],
+              "segments": [
+                {
+                  "start": "13:30",
+                  "end": "15:00",
+                  "title": "智能控制项目一",
+                  "category": "course",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 16,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                },
+                {
+                  "start": "15:00",
+                  "end": "15:30",
+                  "title": "课间休息",
+                  "category": "buffer",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 16,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                },
+                {
+                  "start": "15:30",
+                  "end": "17:00",
+                  "title": "智能控制项目一",
+                  "category": "course",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 16,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "evt-4-02",
+          "sourceIndex": 59,
+          "weekday": 4,
+          "start": "08:00",
+          "end": "11:30",
+          "title": "课程补弱与科研复盘",
+          "category": "study",
+          "notes": "可选家教版仍保留每周新增2.5h课程交付与2h科研。",
+          "sourceStatus": "2026-10-14用户确认自由窗口；建议重新分配",
+          "status": "pending",
+          "fixed": false,
+          "optional": true,
+          "editable": true,
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          },
+          "flags": [],
+          "segments": [
+            {
+              "start": "08:00",
+              "end": "09:00",
+              "title": "项目课交付与课程补弱",
+              "category": "study",
+              "notes": "补回周三换给家教的课程窗口",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            },
+            {
+              "start": "09:00",
+              "end": "09:30",
+              "title": "科研复盘与下批实验计划",
+              "category": "research",
+              "notes": "",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            },
+            {
+              "start": "09:30",
+              "end": "10:00",
+              "title": "休息与活动",
+              "category": "buffer",
+              "notes": "",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            },
+            {
+              "start": "10:00",
+              "end": "11:30",
+              "title": "项目课交付与课程补弱",
+              "category": "study",
+              "notes": "",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            }
+          ],
+          "modified": false,
+          "scheduleHistory": {
+            "effectiveDate": "2026-10-14",
+            "previous": {
+              "id": "evt-4-02",
+              "sourceIndex": 59,
+              "weekday": 4,
+              "start": "08:00",
+              "end": "11:30",
+              "title": "智能控制项目一",
+              "category": "course",
+              "notes": "第1–4节智能控制项目一，含课间；1–16周",
+              "sourceStatus": "课表节次＋用户钟点",
+              "status": "confirmed",
+              "fixed": true,
+              "optional": false,
+              "editable": true,
+              "repeat": {
+                "type": "weekly",
+                "basis": "academic",
+                "weeksStart": 1,
+                "weeksEnd": 16,
+                "parity": "all"
+              },
+              "flags": [],
+              "segments": [
+                {
+                  "start": "08:00",
+                  "end": "09:30",
+                  "title": "智能控制项目一",
+                  "category": "course",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 16,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                },
+                {
+                  "start": "09:30",
+                  "end": "10:00",
+                  "title": "课间休息",
+                  "category": "buffer",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 16,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                },
+                {
+                  "start": "10:00",
+                  "end": "11:30",
+                  "title": "智能控制项目一",
+                  "category": "course",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 16,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "evt-4-10",
+          "sourceIndex": 67,
+          "weekday": 4,
+          "start": "18:30",
+          "end": "20:10",
+          "title": "理化家教预留与恢复",
+          "category": "custom",
+          "notes": "可选第二次理化家教预留，新增家教与商业验证不叠加。",
+          "sourceStatus": "2026-10-14用户确认自由窗口；建议重新分配",
+          "status": "pending",
+          "fixed": false,
+          "optional": true,
+          "editable": true,
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          },
+          "flags": [],
+          "segments": [
+            {
+              "start": "18:30",
+              "end": "20:00",
+              "title": "新线上理化家教预留",
+              "category": "custom",
+              "notes": "30min备课＋30–60min课；未预约、不计入收入。此版暂停可售服务验证。",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            },
+            {
+              "start": "20:00",
+              "end": "20:10",
+              "title": "休息与恢复",
+              "category": "buffer",
+              "notes": "",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            }
+          ],
+          "modified": false,
+          "scheduleHistory": {
+            "effectiveDate": "2026-10-14",
+            "previous": {
+              "id": "evt-4-10",
+              "sourceIndex": 67,
+              "weekday": 4,
+              "start": "18:30",
+              "end": "20:10",
+              "title": "AI 与创新创业",
+              "category": "course",
+              "notes": "第9–10节AI与创新创业；1–12周；结束20:10待核实",
+              "sourceStatus": "节次确认；该结束点暂估",
+              "status": "needs_check",
+              "fixed": true,
+              "optional": false,
+              "editable": true,
+              "repeat": {
+                "type": "weekly",
+                "basis": "academic",
+                "weeksStart": 1,
+                "weeksEnd": 12,
+                "parity": "all"
+              },
+              "flags": [
+                "end_time_needs_check"
+              ],
+              "segments": [
+                {
+                  "start": "18:30",
+                  "end": "20:10",
+                  "title": "AI 与创新创业",
+                  "category": "course",
+                  "repeat": {
+                    "type": "weekly",
+                    "basis": "academic",
+                    "weeksStart": 1,
+                    "weeksEnd": 12,
+                    "parity": "all"
+                  },
+                  "notes": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "evt-4-11",
+          "sourceIndex": 68,
+          "weekday": 4,
+          "start": "20:10",
+          "end": "20:30",
+          "title": "恢复与自由时间",
+          "category": "buffer",
+          "notes": "晚课与其返程取消，保留恢复，20:30后按原线上家教准备。",
+          "sourceStatus": "2026-10-14用户确认自由窗口；建议重新分配",
+          "status": "pending",
+          "fixed": false,
+          "optional": true,
+          "editable": true,
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          },
+          "flags": [],
+          "segments": [
+            {
+              "start": "20:10",
+              "end": "20:30",
+              "title": "恢复与自由时间",
+              "category": "buffer",
+              "notes": "",
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              }
+            }
+          ],
+          "modified": false,
+          "scheduleHistory": {
+            "effectiveDate": "2026-10-14",
+            "previous": {
+              "id": "evt-4-11",
+              "sourceIndex": 68,
+              "weekday": 4,
+              "start": "20:10",
+              "end": "20:30",
+              "title": "生活与恢复",
+              "category": "life",
+              "notes": "回到安静授课地点",
+              "sourceStatus": "建议",
+              "status": "pending",
+              "fixed": false,
+              "optional": true,
+              "editable": true,
+              "repeat": {
+                "type": "weekly",
+                "basis": "ongoing",
+                "weeksStart": 1,
+                "weeksEnd": null,
+                "parity": "all"
+              },
+              "flags": []
+            }
+          }
+        }
+      ]
+    }
+  },
+  "notes": [
+    "课堂窗口可安排不等于免除对应课程提交任务，新增课程时间优先用于课程交付。",
+    "原课堂及课间释放8h40，取消周五晚返程20min后共9h；不等于9h可持续专注。",
+    "新增家教尚未预约；每次课时30–60min，备课暂按30min。",
+    "2026-10-14以前仍按历史课表显示；修改或删除过的父窗口保留，冲突需先处理。"
+  ]
+}

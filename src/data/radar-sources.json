@@ -1,0 +1,148 @@
+[
+  {
+    "id": "aws-ml",
+    "name": "AWS · Machine Learning",
+    "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "format": "xml",
+    "signalType": "release",
+    "publisherId": "amazon",
+    "allowedHosts": [
+      "aws.amazon.com"
+    ],
+    "maxBytes": 1600000,
+    "dateLabel": "原文发布日期"
+  },
+  {
+    "id": "nvidia-dev",
+    "name": "NVIDIA · Developer",
+    "url": "https://developer.nvidia.com/blog/feed/",
+    "format": "xml",
+    "signalType": "release",
+    "publisherId": "nvidia",
+    "allowedHosts": [
+      "developer.nvidia.com"
+    ],
+    "maxBytes": 1600000,
+    "dateLabel": "原文发布日期",
+    "timeoutMs": 12000
+  },
+  {
+    "id": "china-ndrc",
+    "name": "国家发展改革委 · 新闻发布",
+    "url": "https://www.ndrc.gov.cn/xwdt/xwfb/",
+    "format": "ndrc",
+    "signalType": "policy",
+    "publisherId": "china-ndrc",
+    "allowedHosts": [
+      "www.ndrc.gov.cn"
+    ],
+    "maxBytes": 250000,
+    "dateLabel": "原文发布日期"
+  },
+  {
+    "id": "schneider",
+    "name": "Schneider Electric · 官方博客",
+    "url": "https://blog.se.com/feed/",
+    "format": "xml",
+    "signalType": "release",
+    "publisherId": "schneider",
+    "allowedHosts": [
+      "blog.se.com"
+    ],
+    "maxBytes": 1600000,
+    "dateLabel": "原文发布日期"
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft · 官方博客",
+    "url": "https://blogs.microsoft.com/feed/",
+    "format": "xml",
+    "signalType": "release",
+    "publisherId": "microsoft",
+    "allowedHosts": [
+      "blogs.microsoft.com"
+    ],
+    "maxBytes": 1600000,
+    "dateLabel": "原文发布日期"
+  },
+  {
+    "id": "cisa-kev",
+    "name": "CISA · 已被利用漏洞目录",
+    "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+    "format": "cisa",
+    "signalType": "policy",
+    "publisherId": "us-cisa",
+    "fixedTopics": [
+      "cybersecurity"
+    ],
+    "allowedHosts": [
+      "www.cisa.gov"
+    ],
+    "maxBytes": 3000000,
+    "dateLabel": "官方目录收录日",
+    "restrictTopics": true
+  },
+  {
+    "id": "arxiv",
+    "name": "arXiv · AI 与系统预印本",
+    "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.AI%20OR%20cat%3Acs.CR%20OR%20cat%3Aeess.SY&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending",
+    "format": "xml",
+    "signalType": "research",
+    "publisherId": "arxiv",
+    "allowedHosts": [
+      "export.arxiv.org"
+    ],
+    "maxBytes": 350000,
+    "dateLabel": "预印本首次提交日"
+  },
+  {
+    "id": "europepmc",
+    "name": "Europe PMC · 老龄医疗研究",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=12",
+    "format": "epmc",
+    "signalType": "research",
+    "publisherId": "europepmc",
+    "fixedTopics": [
+      "ageing-operations"
+    ],
+    "allowedHosts": [
+      "www.ebi.ac.uk"
+    ],
+    "maxBytes": 500000,
+    "dateLabel": "文献首次发表日",
+    "restrictTopics": true
+  },
+  {
+    "id": "github-langgraph",
+    "name": "LangGraph · 官方软件发布",
+    "url": "https://api.github.com/repos/langchain-ai/langgraph/releases?per_page=6",
+    "format": "github",
+    "signalType": "release",
+    "publisherId": "langchain",
+    "fixedTopics": [
+      "vertical-ai"
+    ],
+    "allowedHosts": [
+      "api.github.com"
+    ],
+    "maxBytes": 500000,
+    "dateLabel": "软件版本发布日期",
+    "restrictTopics": true
+  },
+  {
+    "id": "eia-energy",
+    "name": "EIA · Today in Energy",
+    "url": "https://www.eia.gov/rss/todayinenergy.xml",
+    "format": "xml",
+    "signalType": "industry",
+    "publisherId": "us-eia",
+    "fixedTopics": [
+      "ai-energy"
+    ],
+    "allowedHosts": [
+      "www.eia.gov"
+    ],
+    "maxBytes": 200000,
+    "dateLabel": "原文发布日期"
+  }
+]

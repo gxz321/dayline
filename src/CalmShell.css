@@ -1,0 +1,160 @@
+/* Dayline's quiet shell. Original records and task state remain unchanged. */
+.calm-shell{--blue:#4267df;--soft-blue:#edf3ff;--paper:#fafbfd;--ink:#18212f;--muted:#6c788e;--border:#e5e9f0;min-height:100dvh;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+.calm-shell .sidebar{width:188px;padding:26px 12px;background:#f7f9fc}
+.calm-shell .sidebar .brand{margin-left:17px}
+.calm-shell .brand strong{font-size:31px;letter-spacing:-1px;font-weight:650;line-height:1.25}
+.calm-shell .brand span{font-size:8px;letter-spacing:2.4px;margin-top:4px}
+.calm-shell .sidebar nav{gap:7px;margin-top:34px}
+.calm-shell .nav-item{min-height:49px;gap:15px;font-size:16px;padding:12px 16px;border-radius:11px}
+.calm-shell .nav-item.active{background:#e9efff;color:var(--blue)}
+.calm-shell .sidebar-note{font-size:10px;white-space:normal;line-height:1.9;margin: auto 16px 9px}
+.calm-shell .app-main{margin-left:188px;padding:20px clamp(30px,5vw,72px) 30px;max-width:1500px;min-height:100dvh}
+.calm-shell .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;margin-bottom:24px}
+.calm-shell .topbar .mobile-brand{display:none}
+.calm-shell .shell-date{font-size:15px;font-weight:500;min-height:44px;display:flex;align-items:center;margin:0;color:#263245;padding:8px 0;line-height:1.5}
+.calm-shell .shell-settings{color:#233047;width:44px;height:44px;border-radius:11px}
+.calm-shell .shell-settings.active{color:var(--blue);background:#e9efff}
+.calm-shell .page-heading{margin:0 0 18px}
+.calm-shell .page-heading h1{font-size:34px;letter-spacing:-1.15px;line-height:1.3;font-weight:680}
+.calm-shell .page-heading p{font-size:15px;line-height:1.8;color:var(--muted);margin-top:8px;letter-spacing:0}
+.calm-shell .calendar-page{max-width:1040px}
+.calm-shell .calendar-modes{display:grid;grid-template-columns:1fr 1fr;background:#edf0f6;border-radius:12px;padding:3px;gap:3px;max-width:660px;margin:0 0 18px}
+.calm-shell .calendar-modes button{border:0;background:transparent;color:#4b5870;border-radius:10px;min-height:44px;font-size:16px;font-weight:550;padding:10px 16px}
+.calm-shell .calendar-modes button[aria-current=page]{background:var(--blue);color:white;box-shadow:0 2px 7px #4267df12}
+.calm-shell .today-schedule-heading{margin-top:25px;padding-bottom:8px;max-width:800px;gap:12px;align-items:center}
+.calm-shell .today-schedule-heading h2{font-size:21px;font-weight:650;letter-spacing:-.5px}
+.calm-shell .today-schedule-heading .text-button{font-size:14px;min-width:65px;gap:5px}
+.calm-shell .timeline{max-width:800px;padding:0}
+.calm-shell .timeline-row{grid-template-columns:76px minmax(0,1fr) 44px;grid-template-rows:1fr;min-height:78px;padding:10px 0;gap:0 12px;align-items:center;border-bottom:1px solid var(--border)}
+.calm-shell .event-time{grid-column:1;grid-row:1;font-size:14px;line-height:1.6;align-self:start;padding-top:8px;color:#526078;display:flex;flex-direction:column;gap:0}
+.calm-shell .event-time>strong{font-size:15px;color:#263245;font-weight:500;line-height:1.4}
+.calm-shell .event-time>span{font-size:11px;line-height:1.5;margin:1px 0 0;color:#8290a5}
+.calm-shell .event-title-button{grid-column:2;grid-row:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:3px;padding:5px 0;min-height:48px;align-self:stretch;border-radius:4px;position:relative}
+.calm-shell .event-title{font-size:16px;font-weight:550;line-height:1.65;overflow-wrap:anywhere}
+.calm-shell .event-meta{font-size:12px;color:#77849b;display:flex;align-items:center;gap:8px;line-height:1.6}
+.calm-shell .completion-button{grid-column:3;grid-row:1;min-width:44px;width:44px;min-height:48px;height:100%;margin:0;align-self:stretch}
+.calm-shell .completion-button:after{content:none}
+.calm-shell .completion-button>span{height:23px;width:23px;border:1px solid #91a0b6;background:transparent}
+.calm-shell .completion-button[aria-pressed=true]>span{background:var(--blue);border-color:var(--blue)}
+.calm-shell .timeline-row.is-done .event-title{font-weight:450;color:#8090a4}
+.calm-shell .timeline-row.has-conflict{padding-bottom:22px}
+.calm-shell .event-warning{left:88px;bottom:3px;font-size:11px}
+.calm-shell .sleep-note{max-width:800px;font-size:12px;margin:20px 0;color:#78859a;gap:8px}
+.calm-shell .sleep-note strong{margin-left:8px;color:#528573}
+.calm-shell .day-summary-details{border-top:1px solid var(--border);max-width:800px;margin-top:23px;padding-top:4px}
+.calm-shell .day-summary-details>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;cursor:pointer;font-size:14px;color:#61718a;list-style:none}
+.calm-shell .day-summary-details>summary::-webkit-details-marker{display:none}
+.calm-shell .day-summary-details[open]>summary>svg{transform:rotate(180deg)}
+.calm-shell .day-summary-content{display:grid;grid-template-columns:1.2fr 1fr;gap:20px;padding:12px 0 20px}
+.calm-shell .growth-panel{background:#edf2fc;color:#526482;padding:20px;border-radius:13px}
+.calm-shell .growth-label{font-size:13px}
+.calm-shell .growth-number{font-size:39px;font-weight:600;letter-spacing:-1.5px;margin-top:7px}
+.calm-shell .growth-number small{font-size:17px;font-weight:450;letter-spacing:0;color:#7787a1}
+.calm-shell .growth-progress{height:4px;background:#d8e1f6;margin-top:15px}
+.calm-shell .growth-progress>span{background:var(--blue)}
+.calm-shell .growth-detail{font-size:11px;white-space:normal;display:block;margin-top:12px}
+.calm-shell .growth-detail span{margin:0 4px}
+.calm-shell .growth-completed{color:#7889a3;font-size:11px;opacity:1;margin-top:7px}
+.calm-shell .next-steps{padding:4px 0 0}
+.calm-shell .next-steps h2,.calm-shell .blank-section h2{font-size:16px;margin-bottom:8px}
+.calm-shell .quick-check{font-size:13px;gap:10px;min-height:44px;line-height:1.6}
+.calm-shell .blank-section{border:0;grid-column:1/-1;padding:0;display:grid;grid-template-columns:1fr auto;gap:3px 18px}
+.calm-shell .blank-section h2{margin:0}
+.calm-shell .blank-section>strong{margin:0;font-size:26px;line-height:1.2;grid-row:1/3;grid-column:2}
+.calm-shell .blank-section>p{font-size:12px;margin:0;line-height:1.8;max-width:480px}
+.calm-shell .day-filter{display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:13px;color:#6c7c92;padding-bottom:16px}
+.calm-shell .day-filter select{border:1px solid #dfe5ee;background:transparent;border-radius:8px;color:#52637d;min-height:44px;padding:8px 12px;font-size:14px;min-width:145px}
+.calm-shell .week-navigation{display:flex;gap:10px;align-items:center;max-width:660px;margin:20px 0 6px}
+.calm-shell .day-chips{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;flex:1;overflow:visible}
+.calm-shell .day-chips button{min-width:0;width:100%;height:56px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1px;border:0;border-radius:10px;background:transparent;padding:5px 0;color:#7e8ba1;font-size:11px}
+.calm-shell .day-chips button>strong{font-size:15px;font-weight:550;color:#43536a}
+.calm-shell .day-chips button.selected{background:#eaf0ff;color:var(--blue)}
+.calm-shell .day-chips button.selected>strong{color:var(--blue)}
+.calm-shell .week-navigation>.icon-button{width:44px;min-width:44px;padding:10px 0;color:#6d7d95}
+.calm-shell .week-return-today{display:none}
+.calm-shell .week-overview{display:flex;align-items:center;justify-content:space-between;max-width:800px;gap:12px;color:#7b889c;font-size:12px;margin-bottom:9px}
+.calm-shell .week-overview .text-button{font-size:12px}
+.calm-shell .week-day-heading strong{font-size:18px}
+.calm-shell .week-event{font-size:12px;min-height:70px}
+.calm-shell .app-footer{max-width:1040px;font-size:11px;margin-top:29px;padding-top:15px}
+.calm-shell .button{border-radius:10px;min-height:46px;font-weight:550}
+.calm-shell .button.primary:hover{background:#365ace}
+.calm-shell .next-actions:not(.is-compact){border-radius:15px;padding:23px;background:#fff}
+.calm-shell .next-actions:not(.is-compact) .task-section-head h2{font-size:23px;margin-top:0}
+.calm-shell .goal-body h3{font-size:16px}
+.calm-shell .settings-page{max-width:1040px}
+
+@media(min-width:901px){
+ .calm-shell .calm-focus{max-width:660px}
+ .calm-shell .bottom-nav{display:none}
+ .calm-shell .week-mobile{display:none}
+}
+@media(max-width:900px){
+ .calm-shell .sidebar{display:none}
+ .calm-shell .app-main{margin-left:0;max-width:none;padding: max(15px,env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) calc(89px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px))}
+ .calm-shell .topbar{display:grid;grid-template-columns:44px 1fr 44px;min-height:44px;gap:8px;margin-bottom:20px}
+ .calm-shell .topbar .mobile-brand{display:block;grid-column:1;grid-row:1}
+ .calm-shell .mobile-brand .brand{margin:0}
+ .calm-shell .mobile-brand .brand strong{font-size:26px;line-height:1.2;letter-spacing:-.5px}
+ .calm-shell .mobile-brand .brand span{display:none}
+ .calm-shell .shell-date{grid-column:2;grid-row:1;justify-self:center;font-size:14px;white-space:nowrap;min-width:0}
+ .calm-shell .shell-settings{grid-column:3;grid-row:1;padding:10px;margin-right:-7px}
+ .calm-shell .page-heading{margin-bottom:15px}
+ .calm-shell .page-heading h1,.calm-shell .today-primary .page-heading h1{font-size:32px;line-height:1.3;letter-spacing:-1px}
+ .calm-shell .page-heading p{font-size:14px}
+ .calm-shell .calendar-modes{margin-bottom:16px;border-radius:11px;padding:2px;max-width:none}
+ .calm-shell .calendar-modes button{font-size:15px;min-height:44px;border-radius:9px;padding:9px}
+ .calm-shell .today-schedule-heading{margin-top:23px;padding-bottom:6px}
+ .calm-shell .today-schedule-heading h2{font-size:20px}
+ .calm-shell .today-schedule-heading>.text-button{font-size:13px}
+ .calm-shell .timeline-row{grid-template-columns:57px minmax(0,1fr) 40px;gap:0 10px;min-height:76px;padding:9px 0}
+ .calm-shell .event-time{padding-top:7px}
+ .calm-shell .event-time>strong{font-size:14px}
+ .calm-shell .event-time>span{font-size:10px}
+ .calm-shell .event-title{font-size:15px;line-height:1.55}
+ .calm-shell .event-meta{font-size:11px;line-height:1.65}
+ .calm-shell .completion-button{min-width:44px;width:44px;margin-left:-2px;min-height:48px}
+ .calm-shell .completion-button>span{width:22px;height:22px}
+ .calm-shell .event-warning{left:67px;bottom:2px;font-size:10px}
+ .calm-shell .timeline-row.has-conflict{padding-bottom:22px}
+ .calm-shell .bottom-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:6px max(12px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));background:rgba(250,251,254,.96);border-color:#e5e9f0;box-shadow:none}
+ .calm-shell .bottom-nav>button{font-size:11px;min-height:53px;gap:5px;border-radius:11px;color:#748199}
+ .calm-shell .bottom-nav>button.active{background:transparent;box-shadow:none;color:var(--blue);font-weight:600}
+ .calm-shell .bottom-nav>button>svg{width:23px;height:23px}
+ .calm-shell .sleep-note{font-size:11px;line-height:1.8;align-items:flex-start;gap:7px}
+ .calm-shell .sleep-note>svg{flex-shrink:0;margin-top:1px}
+ .calm-shell .day-summary-content{grid-template-columns:1fr;gap:19px;padding-top:10px}
+ .calm-shell .growth-panel{padding:19px}
+ .calm-shell .growth-detail{font-size:12px}
+ .calm-shell .blank-section>p{font-size:12px}
+ .calm-shell .quick-check{font-size:14px}
+ .calm-shell .week-navigation{display:grid;grid-template-columns:44px 1fr 44px;gap:2px;margin-top:12px}
+ .calm-shell .week-navigation>.icon-button{width:44px;min-width:44px;min-height:44px;grid-row:1}
+ .calm-shell .week-navigation>.icon-button:last-child{grid-column:3}
+ .calm-shell .week-return-today{display:flex;grid-row:1;grid-column:2;font-size:12px}
+ .calm-shell .day-chips{gap:1px;grid-column:1/-1;grid-row:2;grid-template-columns:repeat(7,minmax(44px,1fr));overflow-x:auto;scrollbar-width:none}
+ .calm-shell .day-chips button{height:55px;min-width:44px;min-height:44px;font-size:10px}
+ .calm-shell .day-chips button>strong{font-size:14px}
+ .calm-shell .week-mobile{border-top:1px solid var(--border)}
+ .calm-shell .week-overview{font-size:11px;gap:6px}
+ .calm-shell .week-overview .text-button{font-size:11px}
+ .calm-shell .app-footer{font-size:10px;margin-top:25px}
+ .calm-shell .schedule-revision-note{padding:12px;gap:8px}
+ .calm-shell .schedule-revision-note p{font-size:11px}
+ .calm-shell .schedule-revision-note .text-button{font-size:11px}
+ .calm-shell .next-actions:not(.is-compact){padding:18px 16px}
+}
+@media(max-width:360px){
+ .calm-shell .app-main{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+ .calm-shell .topbar{grid-template-columns:36px 1fr 36px;gap:5px}
+ .calm-shell .shell-date{font-size:13px}
+ .calm-shell .shell-settings{margin-right:-6px}
+ .calm-shell .timeline-row{grid-template-columns:49px minmax(0,1fr) 36px;gap:0 7px}
+ .calm-shell .event-time>strong{font-size:13px}
+ .calm-shell .event-title{font-size:14px}
+ .calm-shell .completion-button{margin-left:-4px}
+ .calm-shell .event-warning{left:56px}
+ .calm-shell .day-chips button{font-size:9px}
+ .calm-shell .day-chips button>strong{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){.calm-shell .page-enter,.calm-shell .bottom-nav{animation:none;transition:none}}

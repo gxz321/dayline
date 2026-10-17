@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.log
+.env*
+!.env.example
+standalone/.data/
+
+pages-dist/
+.pages-cache/

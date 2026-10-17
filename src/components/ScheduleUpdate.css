@@ -1,0 +1,20 @@
+.schedule-update-body { color: #526575; font-size: 14px; line-height: 1.9; }
+.schedule-update-body > p { margin: 0 0 20px; }
+.schedule-variants { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 21px 0; }
+.schedule-variants button { border: 1px solid #dbe3ed; border-radius: 8px; background: #fff; text-align: left; padding: 15px; color: #566a7f; cursor: pointer; font: inherit; line-height: 1.8; min-height: 100px; }
+.schedule-variants button strong { display: block; font-weight: 600; color: #344b65; margin-bottom: 7px; }
+.schedule-variants button span { display: block; font-size: 12px; }
+.schedule-variants button.is-selected { background: #edf2ff; border-color: #9fafeb; }
+.schedule-variants button:focus-visible { outline: 3px solid #b1bfff; outline-offset: 3px; }
+.schedule-budget-note { padding: 14px 16px; border-left: 2px solid #7c90d5; background: #f2f5fc; font-size: 13px; }
+.schedule-change-list article { padding: 14px 0; border-bottom: 1px solid #e2e8ef; }
+.schedule-change-list h3 { font-weight: 600; color: #344b65; font-size: 14px; margin: 0 0 10px; }
+.schedule-change-list p { display: flex; gap: 18px; margin: 5px 0; font-size: 13px; }
+.schedule-change-list span { flex-shrink: 0; min-width: 105px; font-variant-numeric: tabular-nums; color: #5b72b8; }
+.schedule-update-body .inline-note { display: block; margin: 18px 0; }
+.schedule-update-body .inline-note p { margin: 0 0 8px; }
+.schedule-update-body .confirmation-actions { margin-top: 22px; }
+.schedule-revision-note { margin: 0 0 25px; display: flex; gap: 17px; align-items: center; justify-content: space-between; padding: 15px 19px; border: 1px solid #dbe3f1; background: #eef3ff; border-radius: 8px; color: #536b98; font-size: 13px; line-height: 1.8; }
+.schedule-revision-note p { margin: 0; }
+.schedule-revision-note button { min-height: 44px; flex-shrink: 0; }
+@media(max-width:580px) { .schedule-variants { grid-template-columns: 1fr; } .schedule-variants button { min-height: 88px; } .schedule-update-body { font-size: 15px; } .schedule-change-list p { font-size: 14px; gap: 12px; } .schedule-change-list span { min-width: 100px; } .schedule-revision-note { align-items: flex-start; padding: 12px 14px; } .schedule-revision-note p { font-size: 12px; } }

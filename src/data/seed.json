@@ -1,0 +1,3474 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-10",
+  "locale": "zh-CN",
+  "timezone": "Asia/Shanghai",
+  "initialProfile": {
+    "graduationYear": 2028,
+    "graduationMonth": 6,
+    "studyDirection": "机器人",
+    "studyDirectionEditable": true,
+    "focusGoal": "完成当前学业，保留国内与海外发展选择",
+    "planStartDate": "2026-10-12",
+    "academicTermWeek1Date": null,
+    "weekStartsOn": 0,
+    "dailySleepHoursTarget": 8,
+    "scheduleRevision": "flex-2026-10-14",
+    "scheduleVariant": "standard"
+  },
+  "categories": [
+    {
+      "id": "life",
+      "label": "生活"
+    },
+    {
+      "id": "buffer",
+      "label": "缓冲"
+    },
+    {
+      "id": "research",
+      "label": "科研"
+    },
+    {
+      "id": "study",
+      "label": "课程自学"
+    },
+    {
+      "id": "relationship",
+      "label": "关系"
+    },
+    {
+      "id": "exercise",
+      "label": "运动"
+    },
+    {
+      "id": "course",
+      "label": "课堂"
+    },
+    {
+      "id": "tutoring",
+      "label": "家教"
+    },
+    {
+      "id": "commute",
+      "label": "通勤"
+    },
+    {
+      "id": "english",
+      "label": "英语"
+    },
+    {
+      "id": "application",
+      "label": "申请"
+    },
+    {
+      "id": "review",
+      "label": "复盘"
+    },
+    {
+      "id": "date",
+      "label": "约会"
+    },
+    {
+      "id": "opportunity",
+      "label": "机会验证"
+    },
+    {
+      "id": "custom",
+      "label": "自定义 / 预留"
+    }
+  ],
+  "events": [
+    {
+      "id": "evt-0-01",
+      "sourceIndex": 0,
+      "weekday": 0,
+      "start": "07:00",
+      "end": "07:30",
+      "title": "早餐与洗漱",
+      "category": "life",
+      "notes": "早餐、洗漱",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-0-02",
+      "sourceIndex": 1,
+      "weekday": 0,
+      "start": "07:30",
+      "end": "08:00",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "从容开始；必要生活事务",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-0-03",
+      "sourceIndex": 2,
+      "weekday": 0,
+      "start": "08:00",
+      "end": "09:30",
+      "title": "研究与证据积累",
+      "category": "research",
+      "notes": "Med-VLNBench主任务；只做一项可验收成果",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "project": "Med-VLNBench"
+    },
+    {
+      "id": "evt-0-04",
+      "sourceIndex": 3,
+      "weekday": 0,
+      "start": "09:30",
+      "end": "10:00",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "休息、走动",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-0-05",
+      "sourceIndex": 4,
+      "weekday": 0,
+      "start": "10:00",
+      "end": "11:30",
+      "title": "课程自学",
+      "category": "study",
+      "notes": "高学分课闭卷解题/作业",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-0-06",
+      "sourceIndex": 5,
+      "weekday": 0,
+      "start": "11:30",
+      "end": "12:30",
+      "title": "专心通话",
+      "category": "relationship",
+      "notes": "每日专心通话1小时",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-0-07",
+      "sourceIndex": 6,
+      "weekday": 0,
+      "start": "12:30",
+      "end": "13:30",
+      "title": "午餐与短休",
+      "category": "life",
+      "notes": "午餐、短休",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-0-08",
+      "sourceIndex": 7,
+      "weekday": 0,
+      "start": "13:30",
+      "end": "15:00",
+      "title": "研究与证据积累",
+      "category": "research",
+      "notes": "实验与协议；前4周改课程自学1.5h",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "project": "Med-VLNBench",
+      "phaseOverrides": [
+        {
+          "fromPlanWeek": 1,
+          "toPlanWeek": 4,
+          "segments": [
+            {
+              "start": "13:30",
+              "end": "15:00",
+              "title": "课程保护与补强",
+              "category": "study"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evt-0-09",
+      "sourceIndex": 8,
+      "weekday": 0,
+      "start": "15:00",
+      "end": "15:30",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "休息、消息",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-0-10",
+      "sourceIndex": 9,
+      "weekday": 0,
+      "start": "15:30",
+      "end": "16:30",
+      "title": "课程自学",
+      "category": "study",
+      "notes": "机器人/机械设计重点题",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-0-11",
+      "sourceIndex": 10,
+      "weekday": 0,
+      "start": "16:30",
+      "end": "17:15",
+      "title": "运动",
+      "category": "exercise",
+      "notes": "全身力量；按基础渐进",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-0-12",
+      "sourceIndex": 11,
+      "weekday": 0,
+      "start": "17:15",
+      "end": "18:30",
+      "title": "晚餐与准备",
+      "category": "life",
+      "notes": "晚餐、淋浴、前往晚课",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-0-13",
+      "sourceIndex": 12,
+      "weekday": 0,
+      "start": "18:30",
+      "end": "21:00",
+      "title": "毛概",
+      "category": "course",
+      "notes": "第9–11节 毛概；1–16周",
+      "sourceStatus": "课表节次＋用户钟点",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "academic",
+        "weeksStart": 1,
+        "weeksEnd": 16,
+        "parity": "all"
+      },
+      "flags": [],
+      "segments": [
+        {
+          "start": "18:30",
+          "end": "21:00",
+          "title": "毛概",
+          "category": "course",
+          "repeat": {
+            "type": "weekly",
+            "basis": "academic",
+            "weeksStart": 1,
+            "weeksEnd": 16,
+            "parity": "all"
+          },
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "evt-0-14",
+      "sourceIndex": 13,
+      "weekday": 0,
+      "start": "21:00",
+      "end": "21:30",
+      "title": "线上家教",
+      "category": "tutoring",
+      "notes": "每日线上课；须解决下课到上线衔接",
+      "sourceStatus": "21点零转场待落实",
+      "status": "needs_check",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [
+        "zero_transition_needs_check"
+      ],
+      "delivery": "online"
+    },
+    {
+      "id": "evt-0-15",
+      "sourceIndex": 14,
+      "weekday": 0,
+      "start": "21:30",
+      "end": "22:30",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "晚课后恢复/应对延期，不追加重任务",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-0-16",
+      "sourceIndex": 15,
+      "weekday": 0,
+      "start": "22:30",
+      "end": "23:00",
+      "title": "放松与入睡准备",
+      "category": "life",
+      "notes": "洗漱、放松、23点睡觉",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-1-01",
+      "sourceIndex": 16,
+      "weekday": 1,
+      "start": "07:00",
+      "end": "08:00",
+      "title": "早餐与出发",
+      "category": "life",
+      "notes": "早餐、洗漱、前往课堂",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-1-02",
+      "sourceIndex": 17,
+      "weekday": 1,
+      "start": "08:00",
+      "end": "11:30",
+      "title": "机器人控制 · 机械设计",
+      "category": "course",
+      "notes": "第1–4节机器人相关课、机械设计基础，含课间",
+      "sourceStatus": "课表节次＋用户钟点",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "academic",
+        "weeksStart": 1,
+        "weeksEnd": 16,
+        "parity": "all"
+      },
+      "flags": [],
+      "segments": [
+        {
+          "start": "08:00",
+          "end": "09:30",
+          "title": "机器人与控制",
+          "category": "course",
+          "repeat": {
+            "type": "weekly",
+            "basis": "academic",
+            "weeksStart": 1,
+            "weeksEnd": 16,
+            "parity": "all"
+          },
+          "notes": ""
+        },
+        {
+          "start": "09:30",
+          "end": "10:00",
+          "title": "课间休息",
+          "category": "buffer",
+          "repeat": {
+            "type": "weekly",
+            "basis": "academic",
+            "weeksStart": 1,
+            "weeksEnd": 16,
+            "parity": "all"
+          },
+          "notes": ""
+        },
+        {
+          "start": "10:00",
+          "end": "11:30",
+          "title": "机械设计基础",
+          "category": "course",
+          "repeat": {
+            "type": "weekly",
+            "basis": "academic",
+            "weeksStart": 1,
+            "weeksEnd": 16,
+            "parity": "all"
+          },
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "evt-1-03",
+      "sourceIndex": 18,
+      "weekday": 1,
+      "start": "11:30",
+      "end": "12:00",
+      "title": "运动",
+      "category": "exercise",
+      "notes": "快走/轻活动",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-1-04",
+      "sourceIndex": 19,
+      "weekday": 1,
+      "start": "12:00",
+      "end": "12:45",
+      "title": "午餐与短休",
+      "category": "life",
+      "notes": "午餐、休息",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-1-05",
+      "sourceIndex": 20,
+      "weekday": 1,
+      "start": "12:45",
+      "end": "13:00",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "短休、处理必要事项",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-1-06",
+      "sourceIndex": 21,
+      "weekday": 1,
+      "start": "13:00",
+      "end": "14:00",
+      "title": "英语训练",
+      "category": "english",
+      "notes": "雅思训练：限时练习＋错题，先诊断",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-1-07",
+      "sourceIndex": 22,
+      "weekday": 1,
+      "start": "14:00",
+      "end": "16:00",
+      "title": "课程自学",
+      "category": "study",
+      "notes": "课程题目、作业，块内短休",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-1-08",
+      "sourceIndex": 23,
+      "weekday": 1,
+      "start": "16:00",
+      "end": "17:00",
+      "title": "研究与证据积累",
+      "category": "research",
+      "notes": "任务协议/代码；前4周最后0.5h改课程",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "project": "Med-VLNBench",
+      "phaseOverrides": [
+        {
+          "fromPlanWeek": 1,
+          "toPlanWeek": 4,
+          "segments": [
+            {
+              "start": "16:00",
+              "end": "16:30",
+              "title": "研究与证据积累",
+              "category": "research"
+            },
+            {
+              "start": "16:30",
+              "end": "17:00",
+              "title": "课程保护与补强",
+              "category": "study"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evt-1-09",
+      "sourceIndex": 24,
+      "weekday": 1,
+      "start": "17:00",
+      "end": "20:30",
+      "title": "约会与晚餐",
+      "category": "date",
+      "notes": "第1次3.5h，含交通和晚餐；20:30前回到授课地点",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [
+        "travel_and_dinner_included"
+      ]
+    },
+    {
+      "id": "evt-1-10",
+      "sourceIndex": 25,
+      "weekday": 1,
+      "start": "20:30",
+      "end": "21:00",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "准备线上家教",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-1-11",
+      "sourceIndex": 26,
+      "weekday": 1,
+      "start": "21:00",
+      "end": "21:30",
+      "title": "线上家教",
+      "category": "tutoring",
+      "notes": "每日线上半小时",
+      "sourceStatus": "用户固定",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "delivery": "online"
+    },
+    {
+      "id": "evt-1-12",
+      "sourceIndex": 27,
+      "weekday": 1,
+      "start": "21:30",
+      "end": "22:30",
+      "title": "专心通话",
+      "category": "relationship",
+      "notes": "每日1小时通话；此预算保留见面日额外通话",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-1-13",
+      "sourceIndex": 28,
+      "weekday": 1,
+      "start": "22:30",
+      "end": "23:00",
+      "title": "放松与入睡准备",
+      "category": "life",
+      "notes": "洗漱、放松",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-2-01",
+      "sourceIndex": 29,
+      "weekday": 2,
+      "start": "07:00",
+      "end": "08:00",
+      "title": "早餐与洗漱",
+      "category": "life",
+      "notes": "早餐、洗漱",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-2-02",
+      "sourceIndex": 30,
+      "weekday": 2,
+      "start": "08:00",
+      "end": "09:00",
+      "title": "英语训练",
+      "category": "english",
+      "notes": "阅读/听力＋纠错",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-2-03",
+      "sourceIndex": 31,
+      "weekday": 2,
+      "start": "09:00",
+      "end": "09:30",
+      "title": "课程自学",
+      "category": "study",
+      "notes": "当天关键概念闭卷回忆",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-2-04",
+      "sourceIndex": 32,
+      "weekday": 2,
+      "start": "09:30",
+      "end": "10:00",
+      "title": "生活与恢复",
+      "category": "life",
+      "notes": "前往课堂、准备资料",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-2-05",
+      "sourceIndex": 33,
+      "weekday": 2,
+      "start": "10:00",
+      "end": "11:30",
+      "title": "机器人学",
+      "category": "course",
+      "notes": "第3–4节 机器人学；1–16周",
+      "sourceStatus": "课表节次＋用户钟点",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "academic",
+        "weeksStart": 1,
+        "weeksEnd": 16,
+        "parity": "all"
+      },
+      "flags": [],
+      "segments": [
+        {
+          "start": "10:00",
+          "end": "11:30",
+          "title": "机器人学",
+          "category": "course",
+          "repeat": {
+            "type": "weekly",
+            "basis": "academic",
+            "weeksStart": 1,
+            "weeksEnd": 16,
+            "parity": "all"
+          },
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "evt-2-06",
+      "sourceIndex": 34,
+      "weekday": 2,
+      "start": "11:30",
+      "end": "12:00",
+      "title": "午餐与短休",
+      "category": "life",
+      "notes": "午餐",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-2-07",
+      "sourceIndex": 35,
+      "weekday": 2,
+      "start": "12:00",
+      "end": "13:00",
+      "title": "专心通话",
+      "category": "relationship",
+      "notes": "每日通话1小时",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-2-08",
+      "sourceIndex": 36,
+      "weekday": 2,
+      "start": "13:00",
+      "end": "13:30",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "短休；提前到下午课堂",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-2-09",
+      "sourceIndex": 37,
+      "weekday": 2,
+      "start": "13:30",
+      "end": "17:00",
+      "title": "科研、课程交付与弹性",
+      "category": "research",
+      "notes": "周三下午自由安排；科研90min、补弱60min，保留60min恢复。",
+      "sourceStatus": "2026-10-14用户确认自由窗口；建议重新分配",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "segments": [
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "title": "科研深度工作",
+          "category": "research",
+          "notes": "完成一个评测协议、日志或实验结果，不切换项目",
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          }
+        },
+        {
+          "start": "15:00",
+          "end": "15:30",
+          "title": "休息与活动",
+          "category": "buffer",
+          "notes": "",
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          }
+        },
+        {
+          "start": "15:30",
+          "end": "16:30",
+          "title": "项目课交付与课程补弱",
+          "category": "study",
+          "notes": "免出勤仍有任务时先完成智能控制项目；其余补机械设计/机器人学",
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          }
+        },
+        {
+          "start": "16:30",
+          "end": "17:00",
+          "title": "留白与家教前恢复",
+          "category": "buffer",
+          "notes": "",
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          }
+        }
+      ],
+      "modified": false,
+      "scheduleHistory": {
+        "effectiveDate": "2026-10-14",
+        "previous": {
+          "id": "evt-2-09",
+          "sourceIndex": 37,
+          "weekday": 2,
+          "start": "13:30",
+          "end": "17:00",
+          "title": "智能控制项目一",
+          "category": "course",
+          "notes": "第5–8节智能控制项目一，含15–15:30课间",
+          "sourceStatus": "课表节次＋用户钟点",
+          "status": "confirmed",
+          "fixed": true,
+          "optional": false,
+          "editable": true,
+          "repeat": {
+            "type": "weekly",
+            "basis": "academic",
+            "weeksStart": 1,
+            "weeksEnd": 16,
+            "parity": "all"
+          },
+          "flags": [],
+          "segments": [
+            {
+              "start": "13:30",
+              "end": "15:00",
+              "title": "智能控制项目一",
+              "category": "course",
+              "repeat": {
+                "type": "weekly",
+                "basis": "academic",
+                "weeksStart": 1,
+                "weeksEnd": 16,
+                "parity": "all"
+              },
+              "notes": ""
+            },
+            {
+              "start": "15:00",
+              "end": "15:30",
+              "title": "课间休息",
+              "category": "buffer",
+              "repeat": {
+                "type": "weekly",
+                "basis": "academic",
+                "weeksStart": 1,
+                "weeksEnd": 16,
+                "parity": "all"
+              },
+              "notes": ""
+            },
+            {
+              "start": "15:30",
+              "end": "17:00",
+              "title": "智能控制项目一",
+              "category": "course",
+              "repeat": {
+                "type": "weekly",
+                "basis": "academic",
+                "weeksStart": 1,
+                "weeksEnd": 16,
+                "parity": "all"
+              },
+              "notes": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "evt-2-10",
+      "sourceIndex": 38,
+      "weekday": 2,
+      "start": "17:00",
+      "end": "17:30",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "课后休息",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-2-11",
+      "sourceIndex": 39,
+      "weekday": 2,
+      "start": "17:30",
+      "end": "18:00",
+      "title": "晚餐与准备",
+      "category": "life",
+      "notes": "晚餐、教案与设备准备",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-2-12",
+      "sourceIndex": 40,
+      "weekday": 2,
+      "start": "18:00",
+      "end": "19:00",
+      "title": "家教通勤",
+      "category": "commute",
+      "notes": "单程前往家教",
+      "sourceStatus": "用户固定",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-2-13",
+      "sourceIndex": 41,
+      "weekday": 2,
+      "start": "19:00",
+      "end": "21:00",
+      "title": "线下家教",
+      "category": "tutoring",
+      "notes": "周三晚线下2小时",
+      "sourceStatus": "用户固定",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "delivery": "offline"
+    },
+    {
+      "id": "evt-2-14",
+      "sourceIndex": 42,
+      "weekday": 2,
+      "start": "21:00",
+      "end": "21:30",
+      "title": "线上家教",
+      "category": "tutoring",
+      "notes": "每日线上半小时；在附近安静空间或协商改时",
+      "sourceStatus": "21点零转场待落实",
+      "status": "needs_check",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [
+        "zero_transition_needs_check"
+      ],
+      "delivery": "online"
+    },
+    {
+      "id": "evt-2-15",
+      "sourceIndex": 43,
+      "weekday": 2,
+      "start": "21:30",
+      "end": "22:30",
+      "title": "家教通勤",
+      "category": "commute",
+      "notes": "完成线上课后返程",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-2-16",
+      "sourceIndex": 44,
+      "weekday": 2,
+      "start": "22:30",
+      "end": "23:00",
+      "title": "放松与入睡准备",
+      "category": "life",
+      "notes": "洗漱、放松，23点睡觉",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-3-01",
+      "sourceIndex": 45,
+      "weekday": 3,
+      "start": "07:00",
+      "end": "07:30",
+      "title": "早餐与洗漱",
+      "category": "life",
+      "notes": "早餐、洗漱",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-3-02",
+      "sourceIndex": 46,
+      "weekday": 3,
+      "start": "07:30",
+      "end": "08:00",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "生活事务/休息",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-3-03",
+      "sourceIndex": 47,
+      "weekday": 3,
+      "start": "08:00",
+      "end": "09:00",
+      "title": "研究与证据积累",
+      "category": "research",
+      "notes": "主项目实验与记录",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "project": "Med-VLNBench"
+    },
+    {
+      "id": "evt-3-04",
+      "sourceIndex": 48,
+      "weekday": 3,
+      "start": "09:00",
+      "end": "09:30",
+      "title": "升学准备",
+      "category": "application",
+      "notes": "导师筛选/定制邮件草稿/材料维护；用户自行发送",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-3-05",
+      "sourceIndex": 49,
+      "weekday": 3,
+      "start": "09:30",
+      "end": "10:00",
+      "title": "生活与恢复",
+      "category": "life",
+      "notes": "前往课堂；必要校内移动",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-3-06",
+      "sourceIndex": 50,
+      "weekday": 3,
+      "start": "10:00",
+      "end": "11:30",
+      "title": "体育 · 单周",
+      "category": "course",
+      "notes": "第3–4节体育：仅单周；双周留作恢复/作业",
+      "sourceStatus": "课表节次＋用户钟点",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "academic",
+        "weeksStart": 1,
+        "weeksEnd": 16,
+        "parity": "odd"
+      },
+      "flags": [
+        "academic_odd_week"
+      ],
+      "segments": [
+        {
+          "start": "10:00",
+          "end": "11:30",
+          "title": "体育",
+          "category": "course",
+          "repeat": {
+            "type": "weekly",
+            "basis": "academic",
+            "weeksStart": 1,
+            "weeksEnd": 16,
+            "parity": "odd"
+          },
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "evt-3-07",
+      "sourceIndex": 51,
+      "weekday": 3,
+      "start": "11:30",
+      "end": "13:30",
+      "title": "午餐与短休",
+      "category": "life",
+      "notes": "午餐、淋浴、休息、校园事务",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-3-08",
+      "sourceIndex": 52,
+      "weekday": 3,
+      "start": "13:30",
+      "end": "17:00",
+      "title": "机械设计 · 旅游地质",
+      "category": "course",
+      "notes": "第5–6节机械设计；第7–8节旅游地质1–12周",
+      "sourceStatus": "课表节次＋用户钟点",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "academic",
+        "weeksStart": 1,
+        "weeksEnd": 16,
+        "parity": "all"
+      },
+      "flags": [
+        "mixed_course_weeks"
+      ],
+      "segments": [
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "title": "机械设计基础",
+          "category": "course",
+          "repeat": {
+            "type": "weekly",
+            "basis": "academic",
+            "weeksStart": 1,
+            "weeksEnd": 16,
+            "parity": "all"
+          },
+          "notes": ""
+        },
+        {
+          "start": "15:00",
+          "end": "15:30",
+          "title": "课间休息",
+          "category": "buffer",
+          "repeat": {
+            "type": "weekly",
+            "basis": "academic",
+            "weeksStart": 1,
+            "weeksEnd": 16,
+            "parity": "all"
+          },
+          "notes": ""
+        },
+        {
+          "start": "15:30",
+          "end": "17:00",
+          "title": "旅游地质学",
+          "category": "course",
+          "repeat": {
+            "type": "weekly",
+            "basis": "academic",
+            "weeksStart": 1,
+            "weeksEnd": 12,
+            "parity": "all"
+          },
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "evt-3-09",
+      "sourceIndex": 53,
+      "weekday": 3,
+      "start": "17:00",
+      "end": "20:30",
+      "title": "约会与晚餐",
+      "category": "date",
+      "notes": "第2次3.5h，含交通和晚餐；20:30前回授课地点",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [
+        "travel_and_dinner_included"
+      ]
+    },
+    {
+      "id": "evt-3-10",
+      "sourceIndex": 54,
+      "weekday": 3,
+      "start": "20:30",
+      "end": "21:00",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "准备每日家教",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-3-11",
+      "sourceIndex": 55,
+      "weekday": 3,
+      "start": "21:00",
+      "end": "21:30",
+      "title": "线上家教",
+      "category": "tutoring",
+      "notes": "每日线上半小时",
+      "sourceStatus": "用户固定",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "delivery": "online"
+    },
+    {
+      "id": "evt-3-12",
+      "sourceIndex": 56,
+      "weekday": 3,
+      "start": "21:30",
+      "end": "22:30",
+      "title": "专心通话",
+      "category": "relationship",
+      "notes": "每日通话1小时；见面日仍保留",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-3-13",
+      "sourceIndex": 57,
+      "weekday": 3,
+      "start": "22:30",
+      "end": "23:00",
+      "title": "放松与入睡准备",
+      "category": "life",
+      "notes": "洗漱、放松",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-4-01",
+      "sourceIndex": 58,
+      "weekday": 4,
+      "start": "07:00",
+      "end": "08:00",
+      "title": "早餐与出发",
+      "category": "life",
+      "notes": "早餐、洗漱、前往课堂",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-4-02",
+      "sourceIndex": 59,
+      "weekday": 4,
+      "start": "08:00",
+      "end": "11:30",
+      "title": "科研与课程交付",
+      "category": "research",
+      "notes": "周五上午自由安排；科研90min、课程90min，休息30min。",
+      "sourceStatus": "2026-10-14用户确认自由窗口；建议重新分配",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "segments": [
+        {
+          "start": "08:00",
+          "end": "09:30",
+          "title": "科研深度工作",
+          "category": "research",
+          "notes": "跑一批可复现实验或完成结果分析",
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          }
+        },
+        {
+          "start": "09:30",
+          "end": "10:00",
+          "title": "休息与活动",
+          "category": "buffer",
+          "notes": "",
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          }
+        },
+        {
+          "start": "10:00",
+          "end": "11:30",
+          "title": "项目课交付与课程补弱",
+          "category": "study",
+          "notes": "先完成仍需提交的智能控制/创业课任务，再补本周错题",
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          }
+        }
+      ],
+      "modified": false,
+      "scheduleHistory": {
+        "effectiveDate": "2026-10-14",
+        "previous": {
+          "id": "evt-4-02",
+          "sourceIndex": 59,
+          "weekday": 4,
+          "start": "08:00",
+          "end": "11:30",
+          "title": "智能控制项目一",
+          "category": "course",
+          "notes": "第1–4节智能控制项目一，含课间；1–16周",
+          "sourceStatus": "课表节次＋用户钟点",
+          "status": "confirmed",
+          "fixed": true,
+          "optional": false,
+          "editable": true,
+          "repeat": {
+            "type": "weekly",
+            "basis": "academic",
+            "weeksStart": 1,
+            "weeksEnd": 16,
+            "parity": "all"
+          },
+          "flags": [],
+          "segments": [
+            {
+              "start": "08:00",
+              "end": "09:30",
+              "title": "智能控制项目一",
+              "category": "course",
+              "repeat": {
+                "type": "weekly",
+                "basis": "academic",
+                "weeksStart": 1,
+                "weeksEnd": 16,
+                "parity": "all"
+              },
+              "notes": ""
+            },
+            {
+              "start": "09:30",
+              "end": "10:00",
+              "title": "课间休息",
+              "category": "buffer",
+              "repeat": {
+                "type": "weekly",
+                "basis": "academic",
+                "weeksStart": 1,
+                "weeksEnd": 16,
+                "parity": "all"
+              },
+              "notes": ""
+            },
+            {
+              "start": "10:00",
+              "end": "11:30",
+              "title": "智能控制项目一",
+              "category": "course",
+              "repeat": {
+                "type": "weekly",
+                "basis": "academic",
+                "weeksStart": 1,
+                "weeksEnd": 16,
+                "parity": "all"
+              },
+              "notes": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "evt-4-03",
+      "sourceIndex": 60,
+      "weekday": 4,
+      "start": "11:30",
+      "end": "12:30",
+      "title": "午餐与短休",
+      "category": "life",
+      "notes": "午餐、休息",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-4-04",
+      "sourceIndex": 61,
+      "weekday": 4,
+      "start": "12:30",
+      "end": "13:00",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "休息、临时事务",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-4-05",
+      "sourceIndex": 62,
+      "weekday": 4,
+      "start": "13:00",
+      "end": "15:00",
+      "title": "课程自学",
+      "category": "study",
+      "notes": "课程解题、报告与错题回收",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-4-06",
+      "sourceIndex": 63,
+      "weekday": 4,
+      "start": "15:00",
+      "end": "15:30",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "休息",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-4-07",
+      "sourceIndex": 64,
+      "weekday": 4,
+      "start": "15:30",
+      "end": "16:15",
+      "title": "运动",
+      "category": "exercise",
+      "notes": "全身力量训练",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-4-08",
+      "sourceIndex": 65,
+      "weekday": 4,
+      "start": "16:15",
+      "end": "17:15",
+      "title": "英语训练",
+      "category": "english",
+      "notes": "雅思写作/口语＋纠错",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-4-09",
+      "sourceIndex": 66,
+      "weekday": 4,
+      "start": "17:15",
+      "end": "18:30",
+      "title": "晚餐与准备",
+      "category": "life",
+      "notes": "晚餐、淋浴、前往晚课",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-4-10",
+      "sourceIndex": 67,
+      "weekday": 4,
+      "start": "18:30",
+      "end": "20:10",
+      "title": "小服务验证与恢复",
+      "category": "opportunity",
+      "notes": "周五晚自由安排；验证60min，其余恢复。此为替换原课堂，无盈利承诺。",
+      "sourceStatus": "2026-10-14用户确认自由窗口；建议重新分配",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "segments": [
+        {
+          "start": "18:30",
+          "end": "19:30",
+          "title": "可售小服务验证",
+          "category": "opportunity",
+          "notes": "选择一个服务：核实需求、做小样或交付；全周含获客沟通最多2h，不能另加2h",
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          }
+        },
+        {
+          "start": "19:30",
+          "end": "20:10",
+          "title": "恢复与自由时间",
+          "category": "buffer",
+          "notes": "",
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          }
+        }
+      ],
+      "modified": false,
+      "scheduleHistory": {
+        "effectiveDate": "2026-10-14",
+        "previous": {
+          "id": "evt-4-10",
+          "sourceIndex": 67,
+          "weekday": 4,
+          "start": "18:30",
+          "end": "20:10",
+          "title": "AI 与创新创业",
+          "category": "course",
+          "notes": "第9–10节AI与创新创业；1–12周；结束20:10待核实",
+          "sourceStatus": "节次确认；该结束点暂估",
+          "status": "needs_check",
+          "fixed": true,
+          "optional": false,
+          "editable": true,
+          "repeat": {
+            "type": "weekly",
+            "basis": "academic",
+            "weeksStart": 1,
+            "weeksEnd": 12,
+            "parity": "all"
+          },
+          "flags": [
+            "end_time_needs_check"
+          ],
+          "segments": [
+            {
+              "start": "18:30",
+              "end": "20:10",
+              "title": "AI 与创新创业",
+              "category": "course",
+              "repeat": {
+                "type": "weekly",
+                "basis": "academic",
+                "weeksStart": 1,
+                "weeksEnd": 12,
+                "parity": "all"
+              },
+              "notes": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "evt-4-11",
+      "sourceIndex": 68,
+      "weekday": 4,
+      "start": "20:10",
+      "end": "20:30",
+      "title": "恢复与自由时间",
+      "category": "buffer",
+      "notes": "晚课与其返程取消，保留恢复，20:30后按原线上家教准备。",
+      "sourceStatus": "2026-10-14用户确认自由窗口；建议重新分配",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "segments": [
+        {
+          "start": "20:10",
+          "end": "20:30",
+          "title": "恢复与自由时间",
+          "category": "buffer",
+          "notes": "",
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          }
+        }
+      ],
+      "modified": false,
+      "scheduleHistory": {
+        "effectiveDate": "2026-10-14",
+        "previous": {
+          "id": "evt-4-11",
+          "sourceIndex": 68,
+          "weekday": 4,
+          "start": "20:10",
+          "end": "20:30",
+          "title": "生活与恢复",
+          "category": "life",
+          "notes": "回到安静授课地点",
+          "sourceStatus": "建议",
+          "status": "pending",
+          "fixed": false,
+          "optional": true,
+          "editable": true,
+          "repeat": {
+            "type": "weekly",
+            "basis": "ongoing",
+            "weeksStart": 1,
+            "weeksEnd": null,
+            "parity": "all"
+          },
+          "flags": []
+        }
+      }
+    },
+    {
+      "id": "evt-4-12",
+      "sourceIndex": 69,
+      "weekday": 4,
+      "start": "20:30",
+      "end": "21:00",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "家教准备/休息",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-4-13",
+      "sourceIndex": 70,
+      "weekday": 4,
+      "start": "21:00",
+      "end": "21:30",
+      "title": "线上家教",
+      "category": "tutoring",
+      "notes": "每日线上半小时",
+      "sourceStatus": "用户固定",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "delivery": "online"
+    },
+    {
+      "id": "evt-4-14",
+      "sourceIndex": 71,
+      "weekday": 4,
+      "start": "21:30",
+      "end": "22:30",
+      "title": "专心通话",
+      "category": "relationship",
+      "notes": "每日通话1小时",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-4-15",
+      "sourceIndex": 72,
+      "weekday": 4,
+      "start": "22:30",
+      "end": "23:00",
+      "title": "放松与入睡准备",
+      "category": "life",
+      "notes": "洗漱、放松",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-5-01",
+      "sourceIndex": 73,
+      "weekday": 5,
+      "start": "07:00",
+      "end": "08:00",
+      "title": "早餐与洗漱",
+      "category": "life",
+      "notes": "早餐、洗漱",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-5-02",
+      "sourceIndex": 74,
+      "weekday": 5,
+      "start": "08:00",
+      "end": "10:00",
+      "title": "课程自学",
+      "category": "study",
+      "notes": "补齐高优先级课程题与报告；带上预备教案",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-5-03",
+      "sourceIndex": 75,
+      "weekday": 5,
+      "start": "10:00",
+      "end": "11:00",
+      "title": "家教通勤",
+      "category": "commute",
+      "notes": "前往家教，单程1小时",
+      "sourceStatus": "用户固定",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-5-04",
+      "sourceIndex": 76,
+      "weekday": 5,
+      "start": "11:00",
+      "end": "13:00",
+      "title": "线下家教",
+      "category": "tutoring",
+      "notes": "周六固定线下2小时",
+      "sourceStatus": "用户固定",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "delivery": "offline"
+    },
+    {
+      "id": "evt-5-05",
+      "sourceIndex": 77,
+      "weekday": 5,
+      "start": "13:00",
+      "end": "13:30",
+      "title": "午餐与短休",
+      "category": "life",
+      "notes": "午餐",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-5-06",
+      "sourceIndex": 78,
+      "weekday": 5,
+      "start": "13:30",
+      "end": "14:30",
+      "title": "家教通勤",
+      "category": "commute",
+      "notes": "返回住处",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-5-07",
+      "sourceIndex": 79,
+      "weekday": 5,
+      "start": "14:30",
+      "end": "15:30",
+      "title": "专心通话",
+      "category": "relationship",
+      "notes": "提前完成每日通话，晚上可提前睡",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-5-08",
+      "sourceIndex": 80,
+      "weekday": 5,
+      "start": "15:30",
+      "end": "16:00",
+      "title": "英语训练",
+      "category": "english",
+      "notes": "本周错题回收/口语录音",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-5-09",
+      "sourceIndex": 81,
+      "weekday": 5,
+      "start": "16:00",
+      "end": "16:45",
+      "title": "运动",
+      "category": "exercise",
+      "notes": "轻至中等有氧/快走",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-5-10",
+      "sourceIndex": 82,
+      "weekday": 5,
+      "start": "16:45",
+      "end": "17:30",
+      "title": "生活与恢复",
+      "category": "life",
+      "notes": "淋浴、生活事务、备齐周日教案和电脑",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-5-11",
+      "sourceIndex": 83,
+      "weekday": 5,
+      "start": "17:30",
+      "end": "21:00",
+      "title": "约会与晚餐",
+      "category": "date",
+      "notes": "第3次3.5h；酒店可选，须留安静线上授课空间",
+      "sourceStatus": "建议",
+      "status": "needs_check",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [
+        "travel_and_dinner_included",
+        "hotel_optional_route_needs_check"
+      ]
+    },
+    {
+      "id": "evt-5-12",
+      "sourceIndex": 84,
+      "weekday": 5,
+      "start": "21:00",
+      "end": "21:30",
+      "title": "线上家教",
+      "category": "tutoring",
+      "notes": "每日线上半小时：酒店网络/安静空间须先落实",
+      "sourceStatus": "用户固定",
+      "status": "needs_check",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [
+        "quiet_space_and_network_needs_check"
+      ],
+      "delivery": "online"
+    },
+    {
+      "id": "evt-5-13",
+      "sourceIndex": 85,
+      "weekday": 5,
+      "start": "21:30",
+      "end": "22:30",
+      "title": "放松与入睡准备",
+      "category": "life",
+      "notes": "准备翌日、洗漱、放松，22:30睡觉",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-6-01",
+      "sourceIndex": 86,
+      "weekday": 6,
+      "start": "06:30",
+      "end": "07:00",
+      "title": "早餐与洗漱",
+      "category": "life",
+      "notes": "起床、早餐、洗漱；前夜22:30入睡",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-6-02",
+      "sourceIndex": 87,
+      "weekday": 6,
+      "start": "07:00",
+      "end": "08:00",
+      "title": "家教通勤",
+      "category": "commute",
+      "notes": "前往第一位学生；从住处或酒店实测路线",
+      "sourceStatus": "用户固定",
+      "status": "needs_check",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [
+        "route_time_needs_check"
+      ]
+    },
+    {
+      "id": "evt-6-03",
+      "sourceIndex": 88,
+      "weekday": 6,
+      "start": "08:00",
+      "end": "10:00",
+      "title": "线下家教",
+      "category": "tutoring",
+      "notes": "周日第一段线下2小时",
+      "sourceStatus": "用户固定",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "delivery": "offline"
+    },
+    {
+      "id": "evt-6-04",
+      "sourceIndex": 89,
+      "weekday": 6,
+      "start": "10:00",
+      "end": "11:00",
+      "title": "家教通勤",
+      "category": "commute",
+      "notes": "直接到第二位学生；必须<=1h，迟到余量另确认",
+      "sourceStatus": "用户固定",
+      "status": "needs_check",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [
+        "route_time_needs_check"
+      ]
+    },
+    {
+      "id": "evt-6-05",
+      "sourceIndex": 90,
+      "weekday": 6,
+      "start": "11:00",
+      "end": "13:00",
+      "title": "线下家教",
+      "category": "tutoring",
+      "notes": "周日第二段线下2小时",
+      "sourceStatus": "用户固定",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "delivery": "offline"
+    },
+    {
+      "id": "evt-6-06",
+      "sourceIndex": 91,
+      "weekday": 6,
+      "start": "13:00",
+      "end": "13:30",
+      "title": "午餐与短休",
+      "category": "life",
+      "notes": "午餐",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-6-07",
+      "sourceIndex": 92,
+      "weekday": 6,
+      "start": "13:30",
+      "end": "14:30",
+      "title": "家教通勤",
+      "category": "commute",
+      "notes": "返程",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-6-08",
+      "sourceIndex": 93,
+      "weekday": 6,
+      "start": "14:30",
+      "end": "15:30",
+      "title": "专心通话",
+      "category": "relationship",
+      "notes": "每日通话提前到午后；晚间有三段家教/通勤",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-6-09",
+      "sourceIndex": 94,
+      "weekday": 6,
+      "start": "15:30",
+      "end": "16:30",
+      "title": "研究与证据积累",
+      "category": "research",
+      "notes": "整理结果、图表、下周一项实验",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "project": "Med-VLNBench"
+    },
+    {
+      "id": "evt-6-10",
+      "sourceIndex": 95,
+      "weekday": 6,
+      "start": "16:30",
+      "end": "17:00",
+      "title": "周复盘",
+      "category": "review",
+      "notes": "成绩/实验/英语/现金流检查",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-6-11",
+      "sourceIndex": 96,
+      "weekday": 6,
+      "start": "17:00",
+      "end": "17:15",
+      "title": "运动",
+      "category": "exercise",
+      "notes": "快走、活动",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-6-12",
+      "sourceIndex": 97,
+      "weekday": 6,
+      "start": "17:15",
+      "end": "17:30",
+      "title": "留白与准备",
+      "category": "buffer",
+      "notes": "处理延期；不预排新任务",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-6-13",
+      "sourceIndex": 98,
+      "weekday": 6,
+      "start": "17:30",
+      "end": "18:00",
+      "title": "晚餐与准备",
+      "category": "life",
+      "notes": "晚餐、准备家教",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-6-14",
+      "sourceIndex": 99,
+      "weekday": 6,
+      "start": "18:00",
+      "end": "19:00",
+      "title": "家教通勤",
+      "category": "commute",
+      "notes": "前往晚间家教",
+      "sourceStatus": "用户固定",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-6-15",
+      "sourceIndex": 100,
+      "weekday": 6,
+      "start": "19:00",
+      "end": "21:00",
+      "title": "线下家教",
+      "category": "tutoring",
+      "notes": "周日第三段线下2小时",
+      "sourceStatus": "用户固定",
+      "status": "confirmed",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [],
+      "delivery": "offline"
+    },
+    {
+      "id": "evt-6-16",
+      "sourceIndex": 101,
+      "weekday": 6,
+      "start": "21:00",
+      "end": "21:30",
+      "title": "线上家教",
+      "category": "tutoring",
+      "notes": "每日线上半小时；附近安静空间衔接待落实",
+      "sourceStatus": "21点零转场待落实",
+      "status": "needs_check",
+      "fixed": true,
+      "optional": false,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": [
+        "zero_transition_needs_check"
+      ],
+      "delivery": "online"
+    },
+    {
+      "id": "evt-6-17",
+      "sourceIndex": 102,
+      "weekday": 6,
+      "start": "21:30",
+      "end": "22:30",
+      "title": "家教通勤",
+      "category": "commute",
+      "notes": "线上课后返程",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    },
+    {
+      "id": "evt-6-18",
+      "sourceIndex": 103,
+      "weekday": 6,
+      "start": "22:30",
+      "end": "23:00",
+      "title": "放松与入睡准备",
+      "category": "life",
+      "notes": "洗漱、放松，23点睡觉",
+      "sourceStatus": "建议",
+      "status": "pending",
+      "fixed": false,
+      "optional": true,
+      "editable": true,
+      "repeat": {
+        "type": "weekly",
+        "basis": "ongoing",
+        "weeksStart": 1,
+        "weeksEnd": null,
+        "parity": "all"
+      },
+      "flags": []
+    }
+  ],
+  "sleepPatterns": [
+    {
+      "id": "sleep-standard",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "start": "23:00",
+      "end": "07:00",
+      "endDayOffset": 1,
+      "hours": 8,
+      "editable": true
+    },
+    {
+      "id": "sleep-saturday",
+      "weekdays": [
+        5
+      ],
+      "start": "22:30",
+      "end": "06:30",
+      "endDayOffset": 1,
+      "hours": 8,
+      "editable": true
+    }
+  ],
+  "planPhases": [
+    {
+      "id": "academic-protection",
+      "label": "前四周 · 成绩保护",
+      "fromWeek": 1,
+      "toWeek": 4,
+      "growthHours": {
+        "study": 13.5,
+        "research": 7,
+        "english": 3.5,
+        "application": 0.5,
+        "review": 0.5,
+        "opportunity": 1
+      }
+    },
+    {
+      "id": "steady-growth",
+      "label": "稳定阶段 · 证据积累",
+      "fromWeek": 5,
+      "toWeek": null,
+      "growthHours": {
+        "study": 11.5,
+        "research": 9,
+        "english": 3.5,
+        "application": 0.5,
+        "review": 0.5,
+        "opportunity": 1
+      }
+    }
+  ],
+  "capacity": {
+    "weeklyHours": 168,
+    "growthHoursTarget": 26,
+    "commitments": [
+      {
+        "id": "capacity-01",
+        "label": "睡眠",
+        "weeklyHours": 56,
+        "notes": "每天预留8h，周六夜提前半小时；酒店睡眠仍归此项",
+        "editable": true
+      },
+      {
+        "id": "capacity-02",
+        "label": "课堂及校内转换",
+        "weeklyHours": 14.333333333333334,
+        "notes": "原23h预算扣除自由课堂及课间8h40；其余课堂/校内转换仍按预算，两周实测。",
+        "editable": true
+      },
+      {
+        "id": "capacity-03",
+        "label": "家教授课",
+        "weeklyHours": 13.5,
+        "notes": "五段2h线下＋七段0.5h线上",
+        "editable": true
+      },
+      {
+        "id": "capacity-04",
+        "label": "家教内容备课",
+        "weeklyHours": 3,
+        "notes": "暂估，教案、学生错题、课后反馈；线上设备准备另计缓冲窗口",
+        "editable": true
+      },
+      {
+        "id": "capacity-05",
+        "label": "家教校外通勤",
+        "weeklyHours": 9,
+        "notes": "Wed2+Sat2+Sun上午3+Sun晚2；学生间路线和酒店路线需实测",
+        "editable": true
+      },
+      {
+        "id": "capacity-06",
+        "label": "吃饭洗漱家务",
+        "weeklyHours": 15.666666666666666,
+        "notes": "原16h生活窗口中的周五晚课返程20min转为恢复，不重复计算。",
+        "editable": true
+      },
+      {
+        "id": "capacity-07",
+        "label": "每日通话",
+        "weeklyHours": 7,
+        "notes": "每晚/午间1h；见面日仍保留",
+        "editable": true
+      },
+      {
+        "id": "capacity-08",
+        "label": "约会含交通及晚餐",
+        "weeklyHours": 10.5,
+        "notes": "每周3次，每次3.5h中值；过夜睡眠不重复加；额外酒店交通实测",
+        "editable": true
+      },
+      {
+        "id": "capacity-09",
+        "label": "课外运动",
+        "weeklyHours": 3,
+        "notes": "不双计体育课；有氧达标还需实际体育活动/通勤快走补足",
+        "editable": true
+      },
+      {
+        "id": "capacity-10",
+        "label": "恢复与上线准备窗口",
+        "weeklyHours": 9.5,
+        "notes": "原7h保留，新增窗口明确留2.5h休息/恢复，不预借给新任务。",
+        "editable": true
+      }
+    ],
+    "notes": "2026-10-14自由窗口标准版：可分配成长26.5h、目标26h；仍仅0.5h预算余量，恢复已保护。可选家教版成长24h＋最多3h授课备课预留，替换商业验证，不计未接订单收入。"
+  },
+  "budget": {
+    "currency": "CNY",
+    "weeklyIncome": 2000,
+    "incomeRealization": 1,
+    "annualWeeks": 52,
+    "months": 12,
+    "monthlyExpenses": [
+      {
+        "id": "dating",
+        "label": "约会",
+        "amount": 4000,
+        "inputStatus": "user_confirmed"
+      },
+      {
+        "id": "living",
+        "label": "日常生活",
+        "amount": 2000,
+        "inputStatus": "example"
+      },
+      {
+        "id": "transport",
+        "label": "交通",
+        "amount": 300,
+        "inputStatus": "example"
+      },
+      {
+        "id": "education",
+        "label": "教育",
+        "amount": 500,
+        "inputStatus": "example"
+      }
+    ],
+    "monthlySavingTarget": 1500,
+    "hotelPerVisit": 150,
+    "hotelVisitsPerWeek": 1,
+    "hotelIncludedInDating": true,
+    "notes": "除4000元恋爱经费/每次150酒店外，生活等成本为示例；酒店已包含恋爱经费，不能再加一遍；家庭资产不在个人月预算里作收入。"
+  },
+  "milestones": [
+    {
+      "id": "milestone-01",
+      "week": 1,
+      "startDate": "2026-10-12",
+      "dueDate": "2026-10-18",
+      "title": "资格与研究定位",
+      "description": "书面查个人推免/转段规则；做近邻研究对照，冻结一个论文问题",
+      "category": "research",
+      "status": "pending",
+      "editable": true
+    },
+    {
+      "id": "milestone-02",
+      "week": 2,
+      "startDate": "2026-10-19",
+      "dueDate": "2026-10-25",
+      "title": "协议和最小任务",
+      "description": "定义指标、医院规则、事件触发和结束条件；完成可计算的小样例",
+      "category": "research",
+      "status": "pending",
+      "editable": true
+    },
+    {
+      "id": "milestone-03",
+      "week": 3,
+      "startDate": "2026-10-26",
+      "dueDate": "2026-11-01",
+      "title": "行为日志和评测器",
+      "description": "统一行为日志；用正常、碰撞、违规、停滞样例核对评分",
+      "category": "research",
+      "status": "pending",
+      "editable": true
+    },
+    {
+      "id": "milestone-04",
+      "week": 4,
+      "startDate": "2026-11-02",
+      "dueDate": "2026-11-08",
+      "title": "最小闭环与止损",
+      "description": "一个合成/授权布局、一类事件、一个基线贯通；导师决定继续范围",
+      "category": "research",
+      "status": "pending",
+      "editable": true
+    },
+    {
+      "id": "milestone-05",
+      "week": 5,
+      "startDate": "2026-11-09",
+      "dueDate": "2026-11-15",
+      "title": "基线与公平预算",
+      "description": "增加第二个可行基线；分开oracle与端到端任务；固定硬件和超时",
+      "category": "research",
+      "status": "pending",
+      "editable": true
+    },
+    {
+      "id": "milestone-06",
+      "week": 6,
+      "startDate": "2026-11-16",
+      "dueDate": "2026-11-22",
+      "title": "任务切分和可复现",
+      "description": "场景/指令家族切分；锁环境、随机种子与任务清单，保存原始日志",
+      "category": "research",
+      "status": "pending",
+      "editable": true
+    },
+    {
+      "id": "milestone-07",
+      "week": 7,
+      "startDate": "2026-11-23",
+      "dueDate": "2026-11-29",
+      "title": "小规模实验",
+      "description": "跑预登记的小规模任务矩阵，记录失败和异常，查难度差异",
+      "category": "research",
+      "status": "pending",
+      "editable": true
+    },
+    {
+      "id": "milestone-08",
+      "week": 8,
+      "startDate": "2026-11-30",
+      "dueDate": "2026-12-06",
+      "title": "评测有效性",
+      "description": "做规则/事件消融、人工抽查；证明指标能区分行为而非只反映难度",
+      "category": "research",
+      "status": "pending",
+      "editable": true
+    },
+    {
+      "id": "milestone-09",
+      "week": 9,
+      "startDate": "2026-12-07",
+      "dueDate": "2026-12-13",
+      "title": "失败与恢复分析",
+      "description": "形成安全、规则、恢复的分项图；报告不确定性和失败案例",
+      "category": "research",
+      "status": "pending",
+      "editable": true
+    },
+    {
+      "id": "milestone-10",
+      "week": 10,
+      "startDate": "2026-12-14",
+      "dueDate": "2026-12-20",
+      "title": "冻结并转考前维护",
+      "description": "根据真实考试安排降科研到2h；冻结任务、保留必要实验",
+      "category": "research",
+      "status": "pending",
+      "editable": true
+    },
+    {
+      "id": "milestone-11",
+      "week": 11,
+      "startDate": "2026-12-21",
+      "dueDate": "2026-12-27",
+      "title": "报告初稿与成绩优先",
+      "description": "写实验说明和贡献边界；若考试临近则只维护，不硬赶投稿",
+      "category": "research",
+      "status": "pending",
+      "editable": true
+    },
+    {
+      "id": "milestone-12",
+      "week": 12,
+      "startDate": "2026-12-28",
+      "dueDate": "2027-01-03",
+      "title": "导师评审和下一阶段",
+      "description": "交代码/协议/日志/图表/报告；确认是否具备论文定位，2027再扩展",
+      "category": "research",
+      "status": "pending",
+      "editable": true
+    }
+  ],
+  "longTermGoals": [
+    {
+      "id": "goal-graduation",
+      "title": "2028年完成本科，选择下一步",
+      "description": "核实个人适用的升学规则，持续积累成绩、导师反馈与可展示的成果。国内硕士、合适导师直博和海外项目按当届要求评估。",
+      "targetDate": "2028-06-30",
+      "status": "active",
+      "editable": true
+    },
+    {
+      "id": "goal-portable-skills",
+      "title": "建立可以迁移的能力与作品",
+      "description": "把问题定义、数据判断、软件工程、英语表达和客户理解变成有证据的作品；不把职业选择锁定在一个学科标签。",
+      "targetDate": null,
+      "status": "active",
+      "editable": true
+    },
+    {
+      "id": "goal-opportunity",
+      "title": "验证未来商业机会",
+      "description": "探索与现有机器人经历无强关联的方向也可以。先验证谁愿意付费、能解决什么高价值问题、交付成本与重复购买；一次只跑一个有限投入的实验。",
+      "targetDate": null,
+      "status": "exploring",
+      "editable": true
+    },
+    {
+      "id": "goal-sustainable-life",
+      "title": "让健康、关系与现金流长期稳定",
+      "description": "保留8小时睡眠、运动和关系投入，以实际用时和实际收支调整强度；让进步有持续性。",
+      "targetDate": null,
+      "status": "active",
+      "editable": true
+    }
+  ],
+  "checks": [
+    {
+      "id": "check-mon-online",
+      "title": "周一晚课后准时上线",
+      "description": "晚课21:00结束，线上家教21:00开始；先落实安静空间、网络和设备。原时段保留，尚未确认零转场可行。",
+      "eventIds": [
+        "evt-0-13",
+        "evt-0-14"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "check-wed-online",
+      "title": "周三线下到线上衔接",
+      "description": "线下21:00结束后在附近安静空间完成线上课，21:30再返程；没有地点时自行与家长协调。",
+      "eventIds": [
+        "evt-2-13",
+        "evt-2-14"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "check-sun-online",
+      "title": "周日晚间线下到线上衔接",
+      "description": "线下21:00结束、线上21:00开始；需要同地或附近安静空间和已准备好的设备。",
+      "eventIds": [
+        "evt-6-15",
+        "evt-6-16"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "check-sun-route",
+      "title": "实测周日学生之间路线",
+      "description": "10:00–11:00的转场最多1小时；需要实测路程和迟到余量。不能用理论通勤时间当作已确认。",
+      "eventIds": [
+        "evt-6-04"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "check-hotel",
+      "title": "可选住宿与周日早课路线",
+      "description": "周六住宿可选；150元/次已在4000元月恋爱预算内。酒店需可安静授课，周日07:00出发08:00准时到第一位学生。",
+      "eventIds": [
+        "evt-5-11",
+        "evt-5-12",
+        "evt-6-02"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "check-academic-week",
+      "title": "设置本学期第一教学周日期",
+      "description": "计划从2026-10-12开始，这不是教学第1周。体育单周、1–12周与1–16周课程需要实际教学周起点；未设置时显示课程规则和待确认提醒。",
+      "eventIds": [
+        "evt-0-13",
+        "evt-1-02",
+        "evt-2-05",
+        "evt-3-06",
+        "evt-3-08"
+      ],
+      "status": "pending"
+    }
+  ],
+  "assumptions": [
+    "用户确认课时：08–09:30、10–11:30、13:30–15、15:30–17、18:30–21。2026-10-14起周三下午、周五上午及周五晚原课堂窗口可以自由组织；晚课后的20min返程亦转为恢复。",
+    "家教原始安排已更正：周三19–21、周六11–13、周日08–10/11–13/19–21，以及每天21–21:30线上。没有把家教自行改期。",
+    "周一21点下课后，及周三/周日21点线下家教后，需要线上课的安静空间、网络和提前准备。表中保持21点原时段；如不能零移动衔接，需与对应家长协商改时间，不能直接认定可行。",
+    "校外单程通勤1小时。预算按周三往返2h、周六往返2h、周日上午去/学生间转场/返3h、周日晚往返2h，共9h。周日两个学生之间须实测不超过1h。",
+    "约会建议周二17–20:30、周四17–20:30、周六17:30–21，每次3.5h且包含交通和晚餐。三次晚餐各暂计0.5h，从日常生活17.5h中扣1.5h，避免双计。",
+    "每周一次酒店可放周六，150元/次已包含月恋爱预算4000元；住宿睡眠计入睡眠，不能再重复计约会。酒店安静网络和周日07点出发后08点准时到第一位学生须确认，不满足则调整住宿日/地点。",
+    "前四周课程13.5h、科研7h；稳定后课程11.5h、科研9h；英语3.5h、申请0.5h、复盘0.5h、可售验证1h，成长26h。可选两次理化家教版成长24h，暂停可售验证，不无条件叠加。",
+    "其它课程保留单双周与1–12/1–16教学周规则；自由窗口起2026-10-14按持续周模板安排，既有课提交任务仍优先保留。",
+    "课堂及校内转换14h20、备课3h、生活15h40、恢复9.5h等为标准版预算；不能将回复、备课、修订与获客当免费时间；两周实测校准。",
+    "课程及校内转换23h、备课3h、生活16h、运动3h等是预算假设，需要两周实测；日程为工作窗口，实际有效专注时间可能更短。"
+  ],
+  "dataNotes": [
+    "104个父窗口身份保留；自由窗口通过子段重排，2026-10-14前的原课表保留在历史，睡眠另列。",
+    "pending 表示建议或待执行，confirmed 表示用户固定/课表确认，needs_check 表示现实可行性或钟点仍须核实；不把 status 当成每日完成勾选。",
+    "每日完成记录应按 eventId + 本地日期保存，编辑周模板不应抹掉过去记录。",
+    "教学周从用户设置的 academicTermWeek1Date 计算，计划周从 planStartDate 计算，二者不能混用。",
+    "混合课程按子段教学周过滤；周三下午与周五上午/晚自由窗口按当前方案，历史课堂周次独立保留。",
+    "所有事件可以编辑。fixed 仅表示原固定承诺，删除前提示影响并由用户决定。"
+  ]
+}

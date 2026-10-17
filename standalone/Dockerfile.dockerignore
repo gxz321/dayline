@@ -1,0 +1,34 @@
+# Allowlist the build inputs. Arbitrary local files and data disks are not sent.
+**
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+!index.html
+!vite.config.js
+!public/
+!public/**
+!src/
+!src/**
+!worker/
+!worker/**
+!scripts/
+!scripts/build-worker.mjs
+!.openai/
+!.openai/hosting.json
+!standalone/
+!standalone/Dockerfile
+!standalone/Dockerfile.dockerignore
+!standalone/server.mjs
+!standalone/auth.mjs
+!standalone/bucket.mjs
+# Final denies remain effective under otherwise allowed source directories.
+**/.env*
+**/node_modules
+**/.git
+**/.data
+**/*.log
+**/*.zip
+**/*.tar.gz
+**/*.pem
+**/*.key
+**/*.p12

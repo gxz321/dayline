@@ -1,0 +1,21 @@
+import {readFile,readdir,mkdir,writeFile} from 'node:fs/promises';
+import {resolve,relative,extname} from 'node:path';
+const root=resolve(import.meta.dirname,'..');const dist=resolve(root,'dist');
+const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.webmanifest':'application/manifest+json','.json':'application/json'};
+const assets={};
+async function visit(dir){for(const entry of await readdir(dir,{withFileTypes:true})){if(entry.name==='server'||entry.name==='.openai')continue;const path=resolve(dir,entry.name);if(entry.isDirectory())await visit(path);else if(entry.isFile()){const bytes=await readFile(path);assets['/'+relative(dist,path).replaceAll('\\','/')]={type:types[extname(path)]||'application/octet-stream',data:bytes.toString('base64')};}}}
+await visit(dist);
+const core=(await readFile(resolve(root,'worker/radar-core.mjs'),'utf8')).replace(/^export /gm,'');
+const demandCore=(await readFile(resolve(root,'worker/demand-core.mjs'),'utf8')).replace(/^export /gm,'');
+const demandCache=(await readFile(resolve(root,'worker/demand-cache.mjs'),'utf8')).replace(/^import .*;\r?\n/gm,'').replace(/^export /gm,'');
+const telegram=(await readFile(resolve(root,'worker/telegram.mjs'),'utf8')).replace(/^export /gm,'');
+const chat=(await readFile(resolve(root,'worker/chat.mjs'),'utf8')).replace(/^export /gm,'');
+const mcp=(await readFile(resolve(root,'worker/mcp.mjs'),'utf8')).replace(/^export /gm,'');
+const worker=(await readFile(resolve(root,'worker/index.mjs'),'utf8')).replace(/^import .*;\r?\n/gm,'');
+const registry=await readFile(resolve(root,'src/data/radar-sources.json'),'utf8');const topics=await readFile(resolve(root,'src/data/radar-topics.json'),'utf8');
+const demandRegistry=await readFile(resolve(root,'src/data/demand-sources.json'),'utf8');
+const manifest=JSON.parse(await readFile(resolve(root,'.openai/hosting.json'),'utf8'));if(manifest.static)throw new Error('Worker不能保留static配置');
+await mkdir(resolve(dist,'server'),{recursive:true});await mkdir(resolve(dist,'.openai'),{recursive:true});
+await writeFile(resolve(dist,'server/index.js'),`const ASSETS=${JSON.stringify(assets)};\nconst sources=${registry};\nconst topics=${topics};\nconst demandSources=${demandRegistry};\n${core}\n${demandCore}\n${demandCache}\n${telegram}\n${chat}\n${mcp}\n${worker}`);
+await writeFile(resolve(dist,'.openai/hosting.json'),JSON.stringify(manifest,null,2)+'\n');
+console.log(`Worker ready: ${Object.keys(assets).length} embedded assets; ${Buffer.byteLength(core+demandCore+demandCache+telegram+chat+mcp+worker)} bytes server logic.`);

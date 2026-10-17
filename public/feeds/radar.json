@@ -1,0 +1,2280 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-17T07:12:40.718Z",
+  "lastAttemptAt": "2026-10-17T07:12:40.718Z",
+  "nextRefreshAt": "2026-10-17T11:12:40.718Z",
+  "status": "fresh",
+  "items": [
+    {
+      "title": "langgraph==1.2.16",
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.16",
+      "publishedAt": "2026-10-16T22:11:28.000Z",
+      "id": "signal-1b04ad95",
+      "sourceId": "github-langgraph",
+      "sourceName": "LangGraph · 官方软件发布",
+      "publisherId": "langchain",
+      "signalType": "release",
+      "dateLabel": "软件版本发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 89,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "langgraph-sdk==0.4.8",
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.8",
+      "publishedAt": "2026-10-16T22:09:01.000Z",
+      "id": "signal-ec06cebd",
+      "sourceId": "github-langgraph",
+      "sourceName": "LangGraph · 官方软件发布",
+      "publisherId": "langchain",
+      "signalType": "release",
+      "dateLabel": "软件版本发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 89,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Building trust in AI agents: A production-ready evaluation framework with Amazon Bedrock AgentCore",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-trust-in-ai-agents-a-production-ready-evaluation-framework-with-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-10-16T20:48:16.000Z",
+      "id": "signal-4d0c7054",
+      "sourceId": "aws-ml",
+      "sourceName": "AWS · Machine Learning",
+      "publisherId": "amazon",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "topics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "score": 89,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件、AI 评测、成本与可靠性。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+      "url": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
+      "publishedAt": "2026-10-16T17:00:00.000Z",
+      "id": "signal-a03d1356",
+      "sourceId": "nvidia-dev",
+      "sourceName": "NVIDIA · Developer",
+      "publisherId": "nvidia",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 89,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "langgraph-cli==0.4.36",
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.36",
+      "publishedAt": "2026-10-16T16:39:14.000Z",
+      "id": "signal-3cda9db4",
+      "sourceId": "github-langgraph",
+      "sourceName": "LangGraph · 官方软件发布",
+      "publisherId": "langchain",
+      "signalType": "release",
+      "dateLabel": "软件版本发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 89,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
+      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
+      "publishedAt": "2026-10-15T18:01:00.000Z",
+      "id": "signal-85a9b28b",
+      "sourceId": "nvidia-dev",
+      "sourceName": "NVIDIA · Developer",
+      "publisherId": "nvidia",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "topics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "score": 89,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件、AI 评测、成本与可靠性。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+      "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+      "publishedAt": "2026-10-15T18:00:01.000Z",
+      "id": "signal-bda3265a",
+      "sourceId": "nvidia-dev",
+      "sourceName": "NVIDIA · Developer",
+      "publisherId": "nvidia",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 89,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Trust in Depth: Giving agents more autonomy without losing control",
+      "url": "https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/",
+      "publishedAt": "2026-10-15T15:05:35.000Z",
+      "id": "signal-a71bc416",
+      "sourceId": "aws-ml",
+      "sourceName": "AWS · Machine Learning",
+      "publisherId": "amazon",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 89,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "CVE-2025-61624 · Fortinet Multiple Products Path Traversal Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-61624",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "id": "signal-c5160b47",
+      "sourceId": "cisa-kev",
+      "sourceName": "CISA · 已被利用漏洞目录",
+      "publisherId": "us-cisa",
+      "signalType": "policy",
+      "dateLabel": "官方目录收录日",
+      "matchedTopics": [
+        "cybersecurity"
+      ],
+      "topics": [
+        "cybersecurity"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 25,
+        "convergence": 18,
+        "access": 11
+      },
+      "evidenceLabel": "官方行动信号 · 不等于客户订单",
+      "summary": "本轮从公开一手来源采集。匹配方向：安全、权限与合规。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "CVE-2026-102764 · BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-102764",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "id": "signal-fc1aeb73",
+      "sourceId": "cisa-kev",
+      "sourceName": "CISA · 已被利用漏洞目录",
+      "publisherId": "us-cisa",
+      "signalType": "policy",
+      "dateLabel": "官方目录收录日",
+      "matchedTopics": [
+        "cybersecurity"
+      ],
+      "topics": [
+        "cybersecurity"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 25,
+        "convergence": 18,
+        "access": 11
+      },
+      "evidenceLabel": "官方行动信号 · 不等于客户订单",
+      "summary": "本轮从公开一手来源采集。匹配方向：安全、权限与合规。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2610.22372v1",
+      "publishedAt": "2026-10-15T17:59:59.000Z",
+      "id": "signal-33fa7792",
+      "sourceId": "arxiv",
+      "sourceName": "arXiv · AI 与系统预印本",
+      "publisherId": "arxiv",
+      "signalType": "research",
+      "dateLabel": "预印本首次提交日",
+      "matchedTopics": [
+        "vertical-ai",
+        "ai-reliability",
+        "deeptech-transfer"
+      ],
+      "topics": [
+        "vertical-ai",
+        "ai-reliability",
+        "deeptech-transfer"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件、AI 评测、成本与可靠性、科研转化与深技术。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "FDE-Gym: The Last Mile of AI Delivery",
+      "url": "https://arxiv.org/abs/2610.22350v1",
+      "publishedAt": "2026-10-15T17:57:23.000Z",
+      "id": "signal-3dff047e",
+      "sourceId": "arxiv",
+      "sourceName": "arXiv · AI 与系统预印本",
+      "publisherId": "arxiv",
+      "signalType": "research",
+      "dateLabel": "预印本首次提交日",
+      "matchedTopics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "topics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件、AI 评测、成本与可靠性。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+      "url": "https://arxiv.org/abs/2610.22344v1",
+      "publishedAt": "2026-10-15T17:56:32.000Z",
+      "id": "signal-c0020fbb",
+      "sourceId": "arxiv",
+      "sourceName": "arXiv · AI 与系统预印本",
+      "publisherId": "arxiv",
+      "signalType": "research",
+      "dateLabel": "预印本首次提交日",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "3DCodeVerse: Exploring 3D Worlds as Code",
+      "url": "https://arxiv.org/abs/2610.22341v1",
+      "publishedAt": "2026-10-15T17:56:07.000Z",
+      "id": "signal-c3021474",
+      "sourceId": "arxiv",
+      "sourceName": "arXiv · AI 与系统预印本",
+      "publisherId": "arxiv",
+      "signalType": "research",
+      "dateLabel": "预印本首次提交日",
+      "matchedTopics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "topics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件、AI 评测、成本与可靠性。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "How Do Emotions Spread And Affect Decision-Making In Social Networks? An Opinion Dynamics Perspective",
+      "url": "https://arxiv.org/abs/2610.22334v1",
+      "publishedAt": "2026-10-15T17:54:03.000Z",
+      "id": "signal-bdf0c374",
+      "sourceId": "arxiv",
+      "sourceName": "arXiv · AI 与系统预印本",
+      "publisherId": "arxiv",
+      "signalType": "research",
+      "dateLabel": "预印本首次提交日",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "KnowGPO: Knowledge-Grouped Policy Optimization for Search Agents",
+      "url": "https://arxiv.org/abs/2610.22331v1",
+      "publishedAt": "2026-10-15T17:52:33.000Z",
+      "id": "signal-baf0bebb",
+      "sourceId": "arxiv",
+      "sourceName": "arXiv · AI 与系统预印本",
+      "publisherId": "arxiv",
+      "signalType": "research",
+      "dateLabel": "预印本首次提交日",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "langgraph-prebuilt==1.1.1",
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.1.1",
+      "publishedAt": "2026-10-15T04:32:40.000Z",
+      "id": "signal-b9bb9ee5",
+      "sourceId": "github-langgraph",
+      "sourceName": "LangGraph · 官方软件发布",
+      "publisherId": "langchain",
+      "signalType": "release",
+      "dateLabel": "软件版本发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "langgraph-checkpoint-postgres==3.2.0",
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.2.0",
+      "publishedAt": "2026-10-14T19:54:57.000Z",
+      "id": "signal-b1e6052b",
+      "sourceId": "github-langgraph",
+      "sourceName": "LangGraph · 官方软件发布",
+      "publisherId": "langchain",
+      "signalType": "release",
+      "dateLabel": "软件版本发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Build self-improving document processing using Amazon Bedrock AgentCore",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-self-improving-document-processing-using-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-10-14T16:24:07.000Z",
+      "id": "signal-b8cd2d2e",
+      "sourceId": "aws-ml",
+      "sourceName": "AWS · Machine Learning",
+      "publisherId": "amazon",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "langgraph-cli==0.4.35",
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.35",
+      "publishedAt": "2026-10-14T16:11:12.000Z",
+      "id": "signal-3fdaa26d",
+      "sourceId": "github-langgraph",
+      "sourceName": "LangGraph · 官方软件发布",
+      "publisherId": "langchain",
+      "signalType": "release",
+      "dateLabel": "软件版本发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Optimizing Agent Reliability and Tool Calling Efficiency for Chip Design Using NVIDIA NeMo Gym",
+      "url": "https://developer.nvidia.com/blog/optimizing-agent-reliability-and-tool-calling-efficiency-for-chip-design-using-nvidia-nemo-gym/",
+      "publishedAt": "2026-10-14T16:10:45.000Z",
+      "id": "signal-80fd55ff",
+      "sourceId": "nvidia-dev",
+      "sourceName": "NVIDIA · Developer",
+      "publisherId": "nvidia",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "topics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件、AI 评测、成本与可靠性。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Generate presentations with Amazon Bedrock AgentCore",
+      "url": "https://aws.amazon.com/blogs/machine-learning/generate-presentations-with-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-10-14T13:58:43.000Z",
+      "id": "signal-c179b714",
+      "sourceId": "aws-ml",
+      "sourceName": "AWS · Machine Learning",
+      "publisherId": "amazon",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "topics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件、AI 评测、成本与可靠性。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "How to Rewrite Apache Spark UDFs for GPU Acceleration with AI Agents",
+      "url": "https://developer.nvidia.com/blog/rewrite-apache-spark-udfs-gpu-acceleration-ai-agents/",
+      "publishedAt": "2026-10-13T21:33:21.000Z",
+      "id": "signal-4fea6bb7",
+      "sourceId": "nvidia-dev",
+      "sourceName": "NVIDIA · Developer",
+      "publisherId": "nvidia",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Building agents that transact with Anchor Browser and AgentCore payments",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-agents-that-transact-with-anchor-browser-and-agentcore-payments/",
+      "publishedAt": "2026-10-13T20:10:33.000Z",
+      "id": "signal-a0afe244",
+      "sourceId": "aws-ml",
+      "sourceName": "AWS · Machine Learning",
+      "publisherId": "amazon",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai",
+        "global-b2b"
+      ],
+      "topics": [
+        "vertical-ai",
+        "global-b2b"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件、跨境 B2B 与小型软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Manage private pricing offers for Amazon Bedrock with managed entitlements",
+      "url": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+      "publishedAt": "2026-10-13T17:17:25.000Z",
+      "id": "signal-fbfe4c09",
+      "sourceId": "aws-ml",
+      "sourceName": "AWS · Machine Learning",
+      "publisherId": "amazon",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Natural language security queries at Orca Security using Amazon Bedrock",
+      "url": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+      "publishedAt": "2026-10-13T16:03:31.000Z",
+      "id": "signal-b0af37ad",
+      "sourceId": "aws-ml",
+      "sourceName": "AWS · Machine Learning",
+      "publisherId": "amazon",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai",
+        "ai-reliability",
+        "cybersecurity"
+      ],
+      "topics": [
+        "vertical-ai",
+        "ai-reliability",
+        "cybersecurity"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件、AI 评测、成本与可靠性、安全、权限与合规。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "How ShipStation Global built an AI IT help desk on Amazon Bedrock AgentCore",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-10-13T15:54:49.000Z",
+      "id": "signal-8487bfe7",
+      "sourceId": "aws-ml",
+      "sourceName": "AWS · Machine Learning",
+      "publisherId": "amazon",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Build long-horizon agents with Grok 4.7 on Amazon Bedrock",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock/",
+      "publishedAt": "2026-10-13T15:52:20.000Z",
+      "id": "signal-5fc704b1",
+      "sourceId": "aws-ml",
+      "sourceName": "AWS · Machine Learning",
+      "publisherId": "amazon",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "topics": [
+        "vertical-ai",
+        "ai-reliability"
+      ],
+      "score": 84,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件、AI 评测、成本与可靠性。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Introducing Reflection Beam: an open-weight model for agentic coding on AWS",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+      "publishedAt": "2026-10-16T15:23:10.000Z",
+      "id": "signal-d1659854",
+      "sourceId": "aws-ml",
+      "sourceName": "AWS · Machine Learning",
+      "publisherId": "amazon",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-reliability"
+      ],
+      "topics": [
+        "ai-reliability"
+      ],
+      "score": 82,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 17,
+        "convergence": 18,
+        "access": 17
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：AI 评测、成本与可靠性。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "CVE-2026-21589 · Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-21589",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "id": "signal-47154f12",
+      "sourceId": "cisa-kev",
+      "sourceName": "CISA · 已被利用漏洞目录",
+      "publisherId": "us-cisa",
+      "signalType": "policy",
+      "dateLabel": "官方目录收录日",
+      "matchedTopics": [
+        "cybersecurity"
+      ],
+      "topics": [
+        "cybersecurity"
+      ],
+      "score": 79,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 25,
+        "convergence": 18,
+        "access": 11
+      },
+      "evidenceLabel": "官方行动信号 · 不等于客户订单",
+      "summary": "本轮从公开一手来源采集。匹配方向：安全、权限与合规。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "CVE-2026-0322 · Palo Alto Networks PAN-OS Code Injection Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-0322",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "id": "signal-02d30436",
+      "sourceId": "cisa-kev",
+      "sourceName": "CISA · 已被利用漏洞目录",
+      "publisherId": "us-cisa",
+      "signalType": "policy",
+      "dateLabel": "官方目录收录日",
+      "matchedTopics": [
+        "cybersecurity"
+      ],
+      "topics": [
+        "cybersecurity"
+      ],
+      "score": 79,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 25,
+        "convergence": 18,
+        "access": 11
+      },
+      "evidenceLabel": "官方行动信号 · 不等于客户订单",
+      "summary": "本轮从公开一手来源采集。匹配方向：安全、权限与合规。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "CVE-2026-76519 · Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76519",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "id": "signal-99c16bff",
+      "sourceId": "cisa-kev",
+      "sourceName": "CISA · 已被利用漏洞目录",
+      "publisherId": "us-cisa",
+      "signalType": "policy",
+      "dateLabel": "官方目录收录日",
+      "matchedTopics": [
+        "cybersecurity"
+      ],
+      "topics": [
+        "cybersecurity"
+      ],
+      "score": 79,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 25,
+        "convergence": 18,
+        "access": 11
+      },
+      "evidenceLabel": "官方行动信号 · 不等于客户订单",
+      "summary": "本轮从公开一手来源采集。匹配方向：安全、权限与合规。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "CVE-2026-105133 · Ahsay AhsayCBS Improper Authentication Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-105133",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "id": "signal-dacfc706",
+      "sourceId": "cisa-kev",
+      "sourceName": "CISA · 已被利用漏洞目录",
+      "publisherId": "us-cisa",
+      "signalType": "policy",
+      "dateLabel": "官方目录收录日",
+      "matchedTopics": [
+        "cybersecurity"
+      ],
+      "topics": [
+        "cybersecurity"
+      ],
+      "score": 79,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 25,
+        "convergence": 18,
+        "access": 11
+      },
+      "evidenceLabel": "官方行动信号 · 不等于客户订单",
+      "summary": "本轮从公开一手来源采集。匹配方向：安全、权限与合规。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "CVE-2026-105134 · Ahsay AhsayCBS Command Injection Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-105134",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "id": "signal-ddcfcbbf",
+      "sourceId": "cisa-kev",
+      "sourceName": "CISA · 已被利用漏洞目录",
+      "publisherId": "us-cisa",
+      "signalType": "policy",
+      "dateLabel": "官方目录收录日",
+      "matchedTopics": [
+        "cybersecurity"
+      ],
+      "topics": [
+        "cybersecurity"
+      ],
+      "score": 79,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 25,
+        "convergence": 18,
+        "access": 11
+      },
+      "evidenceLabel": "官方行动信号 · 不等于客户订单",
+      "summary": "本轮从公开一手来源采集。匹配方向：安全、权限与合规。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "CVE-2026-104935 · Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-104935",
+      "publishedAt": "2026-10-13T00:00:00.000Z",
+      "id": "signal-14c6ec1d",
+      "sourceId": "cisa-kev",
+      "sourceName": "CISA · 已被利用漏洞目录",
+      "publisherId": "us-cisa",
+      "signalType": "policy",
+      "dateLabel": "官方目录收录日",
+      "matchedTopics": [
+        "cybersecurity"
+      ],
+      "topics": [
+        "cybersecurity"
+      ],
+      "score": 79,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 25,
+        "convergence": 18,
+        "access": 11
+      },
+      "evidenceLabel": "官方行动信号 · 不等于客户订单",
+      "summary": "本轮从公开一手来源采集。匹配方向：安全、权限与合规。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "CVE-2026-96951 · Microsoft Windows Command Injection Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96951",
+      "publishedAt": "2026-10-13T00:00:00.000Z",
+      "id": "signal-fdff1ba5",
+      "sourceId": "cisa-kev",
+      "sourceName": "CISA · 已被利用漏洞目录",
+      "publisherId": "us-cisa",
+      "signalType": "policy",
+      "dateLabel": "官方目录收录日",
+      "matchedTopics": [
+        "cybersecurity"
+      ],
+      "topics": [
+        "cybersecurity"
+      ],
+      "score": 79,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 25,
+        "convergence": 18,
+        "access": 11
+      },
+      "evidenceLabel": "官方行动信号 · 不等于客户订单",
+      "summary": "本轮从公开一手来源采集。匹配方向：安全、权限与合规。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Building Reliable Data Analytics Agents: Lessons from the KDD Cup",
+      "url": "https://developer.nvidia.com/blog/building-reliable-data-analytics-agents-lessons-from-the-kdd-cup/",
+      "publishedAt": "2026-10-08T18:30:02.000Z",
+      "id": "signal-22a44a83",
+      "sourceId": "nvidia-dev",
+      "sourceName": "NVIDIA · Developer",
+      "publisherId": "nvidia",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 78,
+      "scoreBreakdown": {
+        "recency": 19,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Validate AI Factory Changes with Digital Twins and AI Agents",
+      "url": "https://developer.nvidia.com/blog/validate-ai-factory-changes-with-digital-twins-and-ai-agents/",
+      "publishedAt": "2026-10-07T16:00:00.000Z",
+      "id": "signal-a9f22487",
+      "sourceId": "nvidia-dev",
+      "sourceName": "NVIDIA · Developer",
+      "publisherId": "nvidia",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 78,
+      "scoreBreakdown": {
+        "recency": 19,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Dexterity from Supervised Play",
+      "url": "https://arxiv.org/abs/2610.22340v1",
+      "publishedAt": "2026-10-15T17:55:50.000Z",
+      "id": "signal-c4021607",
+      "sourceId": "arxiv",
+      "sourceName": "arXiv · AI 与系统预印本",
+      "publisherId": "arxiv",
+      "signalType": "research",
+      "dateLabel": "预印本首次提交日",
+      "matchedTopics": [
+        "ai-reliability",
+        "deeptech-transfer"
+      ],
+      "topics": [
+        "ai-reliability",
+        "deeptech-transfer"
+      ],
+      "score": 77,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 18,
+        "access": 17
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：AI 评测、成本与可靠性、科研转化与深技术。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
+      "url": "https://arxiv.org/abs/2610.22333v1",
+      "publishedAt": "2026-10-15T17:53:33.000Z",
+      "id": "signal-bcf0c1e1",
+      "sourceId": "arxiv",
+      "sourceName": "arXiv · AI 与系统预印本",
+      "publisherId": "arxiv",
+      "signalType": "research",
+      "dateLabel": "预印本首次提交日",
+      "matchedTopics": [
+        "ai-reliability"
+      ],
+      "topics": [
+        "ai-reliability"
+      ],
+      "score": 77,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 18,
+        "access": 17
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：AI 评测、成本与可靠性。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Designing Transformers for Continuous Diffusion Language Models",
+      "url": "https://arxiv.org/abs/2610.22330v1",
+      "publishedAt": "2026-10-15T17:52:31.000Z",
+      "id": "signal-b9f0bd28",
+      "sourceId": "arxiv",
+      "sourceName": "arXiv · AI 与系统预印本",
+      "publisherId": "arxiv",
+      "signalType": "research",
+      "dateLabel": "预印本首次提交日",
+      "matchedTopics": [
+        "ai-reliability"
+      ],
+      "topics": [
+        "ai-reliability"
+      ],
+      "score": 77,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 18,
+        "access": 17
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：AI 评测、成本与可靠性。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "ACEdit: Stable Multi-Turn Image Editing via Asymmetric Conditioning",
+      "url": "https://arxiv.org/abs/2610.22328v1",
+      "publishedAt": "2026-10-15T17:52:24.000Z",
+      "id": "signal-b7f2f899",
+      "sourceId": "arxiv",
+      "sourceName": "arXiv · AI 与系统预印本",
+      "publisherId": "arxiv",
+      "signalType": "research",
+      "dateLabel": "预印本首次提交日",
+      "matchedTopics": [
+        "ai-reliability"
+      ],
+      "topics": [
+        "ai-reliability"
+      ],
+      "score": 77,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 18,
+        "access": 17
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：AI 评测、成本与可靠性。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Microsoft to expand Azure Maia system to multi-gigawatt deployments",
+      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "publishedAt": "2026-10-12T13:01:29.000Z",
+      "id": "signal-aa89d834",
+      "sourceId": "microsoft",
+      "sourceName": "Microsoft · 官方博客",
+      "publisherId": "microsoft",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-reliability"
+      ],
+      "topics": [
+        "ai-reliability"
+      ],
+      "score": 77,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 17,
+        "convergence": 18,
+        "access": 17
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：AI 评测、成本与可靠性。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "CVE-2023-22894 · Strapi Cleartext Storage of Sensitive Information Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2023-22894",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "id": "signal-138c94eb",
+      "sourceId": "cisa-kev",
+      "sourceName": "CISA · 已被利用漏洞目录",
+      "publisherId": "us-cisa",
+      "signalType": "policy",
+      "dateLabel": "官方目录收录日",
+      "matchedTopics": [
+        "cybersecurity"
+      ],
+      "topics": [
+        "cybersecurity"
+      ],
+      "score": 73,
+      "scoreBreakdown": {
+        "recency": 19,
+        "evidence": 25,
+        "convergence": 18,
+        "access": 11
+      },
+      "evidenceLabel": "官方行动信号 · 不等于客户订单",
+      "summary": "本轮从公开一手来源采集。匹配方向：安全、权限与合规。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "U.S. small-scale solar generation has quadrupled in the last decade",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68324",
+      "publishedAt": "2026-10-16T14:00:00.000Z",
+      "id": "signal-57cf107b",
+      "sourceId": "eia-energy",
+      "sourceName": "EIA · Today in Energy",
+      "publisherId": "us-eia",
+      "signalType": "industry",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 71,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 21,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "一手行业信号 · 盈利仍待验证",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "PJM, ERCOT, and SWPP all set peak load records this summer",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68305",
+      "publishedAt": "2026-10-15T14:00:00.000Z",
+      "id": "signal-cac9b556",
+      "sourceId": "eia-energy",
+      "sourceName": "EIA · Today in Energy",
+      "publisherId": "us-eia",
+      "signalType": "industry",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 71,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 21,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "一手行业信号 · 盈利仍待验证",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Control How Your GPU Shares Work with Green Contexts",
+      "url": "https://developer.nvidia.com/blog/control-how-your-gpu-shares-work-with-green-contexts/",
+      "publishedAt": "2026-10-06T15:00:00.000Z",
+      "id": "signal-b3266837",
+      "sourceId": "nvidia-dev",
+      "sourceName": "NVIDIA · Developer",
+      "publisherId": "nvidia",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-reliability"
+      ],
+      "topics": [
+        "ai-reliability"
+      ],
+      "score": 71,
+      "scoreBreakdown": {
+        "recency": 19,
+        "evidence": 17,
+        "convergence": 18,
+        "access": 17
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：AI 评测、成本与可靠性。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Build Applications on NVIDIA BlueField Faster with NVIDIA DOCA Agent Skills",
+      "url": "https://developer.nvidia.com/blog/build-applications-on-nvidia-bluefield-faster-with-nvidia-doca-agent-skills/",
+      "publishedAt": "2026-10-01T18:13:29.000Z",
+      "id": "signal-4ff60c36",
+      "sourceId": "nvidia-dev",
+      "sourceName": "NVIDIA · Developer",
+      "publisherId": "nvidia",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 71,
+      "scoreBreakdown": {
+        "recency": 12,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Tracing Agent Harness Behavior with NVIDIA NeMo Relay",
+      "url": "https://developer.nvidia.com/blog/tracing-agent-harness-behavior-with-nvidia-nemo-relay/",
+      "publishedAt": "2026-09-30T16:00:00.000Z",
+      "id": "signal-32018086",
+      "sourceId": "nvidia-dev",
+      "sourceName": "NVIDIA · Developer",
+      "publisherId": "nvidia",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 71,
+      "scoreBreakdown": {
+        "recency": 12,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Introducing the new Copilot with Home, Code and Autopilot",
+      "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "publishedAt": "2026-09-25T12:03:50.000Z",
+      "id": "signal-a2a97bbd",
+      "sourceId": "microsoft",
+      "sourceName": "Microsoft · 官方博客",
+      "publisherId": "microsoft",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "vertical-ai"
+      ],
+      "topics": [
+        "vertical-ai"
+      ],
+      "score": 71,
+      "scoreBreakdown": {
+        "recency": 12,
+        "evidence": 17,
+        "convergence": 24,
+        "access": 18
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：行业 AI 与流程软件。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Monthly wind generation in ISO-NE is about 68% higher than last year",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68304",
+      "publishedAt": "2026-10-14T14:00:00.000Z",
+      "id": "signal-cbc9b6e9",
+      "sourceId": "eia-energy",
+      "sourceName": "EIA · Today in Energy",
+      "publisherId": "us-eia",
+      "signalType": "industry",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 66,
+      "scoreBreakdown": {
+        "recency": 25,
+        "evidence": 21,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "一手行业信号 · 盈利仍待验证",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "国家发展改革委有关负责同志就《关于发展新质生产力的意见》答记者问",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261009_1408037.html",
+      "publishedAt": "2026-10-09T00:00:00.000Z",
+      "id": "signal-2bef5eb3",
+      "sourceId": "china-ndrc",
+      "sourceName": "国家发展改革委 · 新闻发布",
+      "publisherId": "china-ndrc",
+      "signalType": "policy",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "deeptech-transfer"
+      ],
+      "topics": [
+        "deeptech-transfer"
+      ],
+      "score": 63,
+      "scoreBreakdown": {
+        "recency": 19,
+        "evidence": 25,
+        "convergence": 12,
+        "access": 7
+      },
+      "evidenceLabel": "官方行动信号 · 不等于客户订单",
+      "summary": "本轮从公开一手来源采集。匹配方向：科研转化与深技术。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Coordinated cellular architecture reveals weakened cortical structure–behavior coupling in normal aging",
+      "url": "https://europepmc.org/article/PMC/PMC13662101",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "id": "signal-31f44413",
+      "sourceId": "europepmc",
+      "sourceName": "Europe PMC · 老龄医疗研究",
+      "publisherId": "europepmc",
+      "signalType": "research",
+      "dateLabel": "文献首次发表日",
+      "matchedTopics": [
+        "ageing-operations"
+      ],
+      "topics": [
+        "ageing-operations"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 6,
+        "access": 12
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：老龄服务与机构运营。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Microbiota-derived metabolite signatures in Alzheimer’s disease across the cognitive aging continuum: a human-focused systematic review and evidence-weighted knowledge graph",
+      "url": "https://europepmc.org/article/PMC/PMC13656208",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "id": "signal-34865008",
+      "sourceId": "europepmc",
+      "sourceName": "Europe PMC · 老龄医疗研究",
+      "publisherId": "europepmc",
+      "signalType": "research",
+      "dateLabel": "文献首次发表日",
+      "matchedTopics": [
+        "ageing-operations"
+      ],
+      "topics": [
+        "ageing-operations"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 6,
+        "access": 12
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：老龄服务与机构运营。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "The relationship between socioeconomic factors, social participation, behaviours, and healthy ageing: an analysis of longitudinal data",
+      "url": "https://europepmc.org/article/PMC/PMC13661375",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "id": "signal-3ec77145",
+      "sourceId": "europepmc",
+      "sourceName": "Europe PMC · 老龄医疗研究",
+      "publisherId": "europepmc",
+      "signalType": "research",
+      "dateLabel": "文献首次发表日",
+      "matchedTopics": [
+        "ageing-operations"
+      ],
+      "topics": [
+        "ageing-operations"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 6,
+        "access": 12
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：老龄服务与机构运营。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Dysfunction of lipid metabolism and lysosomal capacity: at the core of microglial aging?",
+      "url": "https://europepmc.org/article/PMC/PMC13655923",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "id": "signal-4109daf9",
+      "sourceId": "europepmc",
+      "sourceName": "Europe PMC · 老龄医疗研究",
+      "publisherId": "europepmc",
+      "signalType": "research",
+      "dateLabel": "文献首次发表日",
+      "matchedTopics": [
+        "ageing-operations"
+      ],
+      "topics": [
+        "ageing-operations"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 6,
+        "access": 12
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：老龄服务与机构运营。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Editorial: The silent stigma: the intersections of ageing with HIV",
+      "url": "https://europepmc.org/article/PMC/PMC13662290",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "id": "signal-77e18e30",
+      "sourceId": "europepmc",
+      "sourceName": "Europe PMC · 老龄医疗研究",
+      "publisherId": "europepmc",
+      "signalType": "research",
+      "dateLabel": "文献首次发表日",
+      "matchedTopics": [
+        "ageing-operations"
+      ],
+      "topics": [
+        "ageing-operations"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 6,
+        "access": 12
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：老龄服务与机构运营。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Recommendations for the development, implementation, and evaluation of technology-assisted physical activity interventions to support healthy aging: insights from PhysAgeNet",
+      "url": "https://europepmc.org/article/PMC/PMC13655530",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "id": "signal-7fa75035",
+      "sourceId": "europepmc",
+      "sourceName": "Europe PMC · 老龄医疗研究",
+      "publisherId": "europepmc",
+      "signalType": "research",
+      "dateLabel": "文献首次发表日",
+      "matchedTopics": [
+        "ageing-operations"
+      ],
+      "topics": [
+        "ageing-operations"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 6,
+        "access": 12
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：老龄服务与机构运营。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Occupational neurotoxicant exposures, cognitive reserve, and brain aging: a scoping review",
+      "url": "https://europepmc.org/article/PMC/PMC13659289",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "id": "signal-8d2495f0",
+      "sourceId": "europepmc",
+      "sourceName": "Europe PMC · 老龄医疗研究",
+      "publisherId": "europepmc",
+      "signalType": "research",
+      "dateLabel": "文献首次发表日",
+      "matchedTopics": [
+        "ageing-operations"
+      ],
+      "topics": [
+        "ageing-operations"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 6,
+        "access": 12
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：老龄服务与机构运营。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Cerebrospinal fluid metabolite alterations associated with human brain aging: an untargeted metabolomics study",
+      "url": "https://europepmc.org/article/PMC/PMC13654730",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "id": "signal-93a1ef62",
+      "sourceId": "europepmc",
+      "sourceName": "Europe PMC · 老龄医疗研究",
+      "publisherId": "europepmc",
+      "signalType": "research",
+      "dateLabel": "文献首次发表日",
+      "matchedTopics": [
+        "ageing-operations"
+      ],
+      "topics": [
+        "ageing-operations"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 6,
+        "access": 12
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：老龄服务与机构运营。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Editorial: Lipid signaling in immunity: from inflammation and ageing to cancer and therapeutic opportunities",
+      "url": "https://europepmc.org/article/PMC/PMC13661425",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "id": "signal-ac9533d5",
+      "sourceId": "europepmc",
+      "sourceName": "Europe PMC · 老龄医疗研究",
+      "publisherId": "europepmc",
+      "signalType": "research",
+      "dateLabel": "文献首次发表日",
+      "matchedTopics": [
+        "ageing-operations"
+      ],
+      "topics": [
+        "ageing-operations"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 6,
+        "access": 12
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：老龄服务与机构运营。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Correction: Promoting healthy aging in a digital world: leveraging technology for enhanced elderly care and wellbeing",
+      "url": "https://europepmc.org/article/PMC/PMC13662911",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "id": "signal-acdd3aee",
+      "sourceId": "europepmc",
+      "sourceName": "Europe PMC · 老龄医疗研究",
+      "publisherId": "europepmc",
+      "signalType": "research",
+      "dateLabel": "文献首次发表日",
+      "matchedTopics": [
+        "ageing-operations"
+      ],
+      "topics": [
+        "ageing-operations"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 30,
+        "evidence": 12,
+        "convergence": 6,
+        "access": 12
+      },
+      "evidenceLabel": "研究信号 · 不证明成熟产品",
+      "summary": "本轮从公开一手来源采集。匹配方向：老龄服务与机构运营。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Mixed outlook for energy expenditures this winter",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68264",
+      "publishedAt": "2026-10-07T14:00:00.000Z",
+      "id": "signal-d937aa50",
+      "sourceId": "eia-energy",
+      "sourceName": "EIA · Today in Energy",
+      "publisherId": "us-eia",
+      "signalType": "industry",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 19,
+        "evidence": 21,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "一手行业信号 · 盈利仍待验证",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Crude oil prices and refinery margins generally increased throughout the third quarter",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68245",
+      "publishedAt": "2026-10-05T14:00:00.000Z",
+      "id": "signal-ee3c488d",
+      "sourceId": "eia-energy",
+      "sourceName": "EIA · Today in Energy",
+      "publisherId": "us-eia",
+      "signalType": "industry",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 19,
+        "evidence": 21,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "一手行业信号 · 盈利仍待验证",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "New England natural gas prices have been trading near record discounts to Henry Hub",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68124",
+      "publishedAt": "2026-09-09T14:00:00.000Z",
+      "id": "signal-8295f5c1",
+      "sourceId": "eia-energy",
+      "sourceName": "EIA · Today in Energy",
+      "publisherId": "us-eia",
+      "signalType": "industry",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-reliability",
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-reliability",
+        "ai-energy"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 4,
+        "evidence": 21,
+        "convergence": 18,
+        "access": 17
+      },
+      "evidenceLabel": "一手行业信号 · 盈利仍待验证",
+      "summary": "本轮从公开一手来源采集。匹配方向：AI 评测、成本与可靠性、能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Weekly average load in ERCOT continues near record high",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68084",
+      "publishedAt": "2026-09-03T14:00:00.000Z",
+      "id": "signal-7eda2330",
+      "sourceId": "eia-energy",
+      "sourceName": "EIA · Today in Energy",
+      "publisherId": "us-eia",
+      "signalType": "industry",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-reliability",
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-reliability",
+        "ai-energy"
+      ],
+      "score": 60,
+      "scoreBreakdown": {
+        "recency": 4,
+        "evidence": 21,
+        "convergence": 18,
+        "access": 17
+      },
+      "evidenceLabel": "一手行业信号 · 盈利仍待验证",
+      "summary": "本轮从公开一手来源采集。匹配方向：AI 评测、成本与可靠性、能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Open control meets intelligent motor management in water networks",
+      "url": "https://blog.se.com/industry/2026/09/29/open-control-meets-intelligent-motor-management-in-water-networks/",
+      "publishedAt": "2026-09-29T11:31:00.000Z",
+      "id": "signal-adac39e2",
+      "sourceId": "schneider",
+      "sourceName": "Schneider Electric · 官方博客",
+      "publisherId": "schneider",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "cybersecurity",
+        "ageing-operations",
+        "ai-energy"
+      ],
+      "topics": [
+        "cybersecurity",
+        "ageing-operations",
+        "ai-energy"
+      ],
+      "score": 59,
+      "scoreBreakdown": {
+        "recency": 12,
+        "evidence": 17,
+        "convergence": 18,
+        "access": 12
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：安全、权限与合规、老龄服务与机构运营、能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Data center community opposition: How cooling design affects water, noise, and permitting",
+      "url": "https://blog.se.com/datacenter/2026/10/08/data-center-community-opposition-how-cooling-design-affects-water-noise-and-permitting/",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "id": "signal-47191cc0",
+      "sourceId": "schneider",
+      "sourceName": "Schneider Electric · 官方博客",
+      "publisherId": "schneider",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 56,
+      "scoreBreakdown": {
+        "recency": 19,
+        "evidence": 17,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "From Cooling capacity to System Intelligence: The critical role of Services in reliable AI Data Centers",
+      "url": "https://blog.se.com/services/2026/10/07/services-and-system-intelligence-for-ai-data-center-reliability-sgm/",
+      "publishedAt": "2026-10-07T06:44:51.000Z",
+      "id": "signal-27fb9d54",
+      "sourceId": "schneider",
+      "sourceName": "Schneider Electric · 官方博客",
+      "publisherId": "schneider",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 56,
+      "scoreBreakdown": {
+        "recency": 19,
+        "evidence": 17,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "AI infrastructure deployment: Demand is easy. Execution is hard.",
+      "url": "https://blog.se.com/datacenter/2026/10/06/3-operational-priorities-for-successful-ai-infrastructure-deployment/",
+      "publishedAt": "2026-10-06T13:00:00.000Z",
+      "id": "signal-04968268",
+      "sourceId": "schneider",
+      "sourceName": "Schneider Electric · 官方博客",
+      "publisherId": "schneider",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 56,
+      "scoreBreakdown": {
+        "recency": 19,
+        "evidence": 17,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "U.S. natural gas production reached a record high in July 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68225",
+      "publishedAt": "2026-10-02T14:00:00.000Z",
+      "id": "signal-ea2d37b7",
+      "sourceId": "eia-energy",
+      "sourceName": "EIA · Today in Energy",
+      "publisherId": "us-eia",
+      "signalType": "industry",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 53,
+      "scoreBreakdown": {
+        "recency": 12,
+        "evidence": 21,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "一手行业信号 · 盈利仍待验证",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "U.S. exports of propane reached records in the first half of 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68244",
+      "publishedAt": "2026-10-01T14:00:00.000Z",
+      "id": "signal-ed3c46fa",
+      "sourceId": "eia-energy",
+      "sourceName": "EIA · Today in Energy",
+      "publisherId": "us-eia",
+      "signalType": "industry",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 53,
+      "scoreBreakdown": {
+        "recency": 12,
+        "evidence": 21,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "一手行业信号 · 盈利仍待验证",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "U.S. electricity use for electric vehicles increasing at a slower pace in 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68224",
+      "publishedAt": "2026-09-30T14:00:00.000Z",
+      "id": "signal-e92d3624",
+      "sourceId": "eia-energy",
+      "sourceName": "EIA · Today in Energy",
+      "publisherId": "us-eia",
+      "signalType": "industry",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 53,
+      "scoreBreakdown": {
+        "recency": 12,
+        "evidence": 21,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "一手行业信号 · 盈利仍待验证",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Rethinking security for the age of AI",
+      "url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
+      "publishedAt": "2026-07-27T16:30:09.000Z",
+      "id": "signal-fbc62109",
+      "sourceId": "microsoft",
+      "sourceName": "Microsoft · 官方博客",
+      "publisherId": "microsoft",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "cybersecurity"
+      ],
+      "topics": [
+        "cybersecurity"
+      ],
+      "score": 50,
+      "scoreBreakdown": {
+        "recency": 4,
+        "evidence": 17,
+        "convergence": 18,
+        "access": 11
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：安全、权限与合规。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "AI is moving faster than infrastructure. Leaders need a new strategy.",
+      "url": "https://blog.se.com/energy-management-energy-efficiency/2026/10/02/leaders-need-a-new-strategy-for-ai-infrastucture-planning/",
+      "publishedAt": "2026-10-02T18:52:34.000Z",
+      "id": "signal-50043e76",
+      "sourceId": "schneider",
+      "sourceName": "Schneider Electric · 官方博客",
+      "publisherId": "schneider",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 49,
+      "scoreBreakdown": {
+        "recency": 12,
+        "evidence": 17,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "The Future of Grid Intelligence",
+      "url": "https://blog.se.com/infrastructure-and-grid/2026/10/02/the-future-of-grid-intelligence/",
+      "publishedAt": "2026-10-02T13:58:15.000Z",
+      "id": "signal-fd8f98e2",
+      "sourceId": "schneider",
+      "sourceName": "Schneider Electric · 官方博客",
+      "publisherId": "schneider",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 49,
+      "scoreBreakdown": {
+        "recency": 12,
+        "evidence": 17,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Partnerships for Innovation: Why Lighting Technology Leads the Direct Current Energy Transition",
+      "url": "https://blog.se.com/infrastructure-and-grid/2026/10/02/partnerships-for-innovation-why-lighting-technology-leads-the-direct-current-energy-transition/",
+      "publishedAt": "2026-10-02T11:23:02.000Z",
+      "id": "signal-624a22fb",
+      "sourceId": "schneider",
+      "sourceName": "Schneider Electric · 官方博客",
+      "publisherId": "schneider",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 49,
+      "scoreBreakdown": {
+        "recency": 12,
+        "evidence": 17,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Commercial Battery Energy Storage Systems: A strategic advantage for C&I businesses",
+      "url": "https://blog.se.com/energy-management-energy-efficiency/2026/09/29/commercial-battery-energy-storage-systems/",
+      "publishedAt": "2026-09-29T06:52:00.000Z",
+      "id": "signal-5555067a",
+      "sourceId": "schneider",
+      "sourceName": "Schneider Electric · 官方博客",
+      "publisherId": "schneider",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 49,
+      "scoreBreakdown": {
+        "recency": 12,
+        "evidence": 17,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "Powering America’s Genesis Mission: Microsoft’s commitment to scientific discovery",
+      "url": "https://blogs.microsoft.com/blog/2026/07/22/powering-americas-genesis-mission-microsofts-commitment-to-scientific-discovery/",
+      "publishedAt": "2026-07-22T12:00:06.000Z",
+      "id": "signal-607eacb9",
+      "sourceId": "microsoft",
+      "sourceName": "Microsoft · 官方博客",
+      "publisherId": "microsoft",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "ai-energy"
+      ],
+      "topics": [
+        "ai-energy"
+      ],
+      "score": 41,
+      "scoreBreakdown": {
+        "recency": 4,
+        "evidence": 17,
+        "convergence": 12,
+        "access": 8
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：能源、储能与算力设施。请核实客户问题与付费意愿。"
+    },
+    {
+      "title": "The yield imperative: Turning AI infrastructure into useful intelligence",
+      "url": "https://blogs.microsoft.com/blog/2026/09/01/the-yield-imperative-turning-ai-infrastructure-into-useful-intelligence/",
+      "publishedAt": "2026-09-02T06:00:02.000Z",
+      "id": "signal-0ced40d7",
+      "sourceId": "microsoft",
+      "sourceName": "Microsoft · 官方博客",
+      "publisherId": "microsoft",
+      "signalType": "release",
+      "dateLabel": "原文发布日期",
+      "matchedTopics": [
+        "deeptech-transfer"
+      ],
+      "topics": [
+        "deeptech-transfer"
+      ],
+      "score": 40,
+      "scoreBreakdown": {
+        "recency": 4,
+        "evidence": 17,
+        "convergence": 12,
+        "access": 7
+      },
+      "evidenceLabel": "供应商发布 · 商业效果待核实",
+      "summary": "本轮从公开一手来源采集。匹配方向：科研转化与深技术。请核实客户问题与付费意愿。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "aws-ml",
+      "name": "AWS · Machine Learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "status": "ok",
+      "lastSuccessAt": "2026-10-17T07:12:40.718Z",
+      "itemCount": 20,
+      "publisherId": "amazon"
+    },
+    {
+      "id": "nvidia-dev",
+      "name": "NVIDIA · Developer",
+      "url": "https://developer.nvidia.com/blog/feed/",
+      "status": "ok",
+      "lastSuccessAt": "2026-10-17T07:12:40.718Z",
+      "itemCount": 60,
+      "publisherId": "nvidia"
+    },
+    {
+      "id": "china-ndrc",
+      "name": "国家发展改革委 · 新闻发布",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/",
+      "status": "ok",
+      "lastSuccessAt": "2026-10-17T07:12:40.718Z",
+      "itemCount": 25,
+      "publisherId": "china-ndrc"
+    },
+    {
+      "id": "schneider",
+      "name": "Schneider Electric · 官方博客",
+      "url": "https://blog.se.com/feed/",
+      "status": "ok",
+      "lastSuccessAt": "2026-10-17T07:12:40.718Z",
+      "itemCount": 12,
+      "publisherId": "schneider"
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft · 官方博客",
+      "url": "https://blogs.microsoft.com/feed/",
+      "status": "ok",
+      "lastSuccessAt": "2026-10-17T07:12:40.718Z",
+      "itemCount": 10,
+      "publisherId": "microsoft"
+    },
+    {
+      "id": "cisa-kev",
+      "name": "CISA · 已被利用漏洞目录",
+      "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+      "status": "ok",
+      "lastSuccessAt": "2026-10-17T07:12:40.718Z",
+      "itemCount": 20,
+      "publisherId": "us-cisa"
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv · AI 与系统预印本",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.AI%20OR%20cat%3Acs.CR%20OR%20cat%3Aeess.SY&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending",
+      "status": "ok",
+      "lastSuccessAt": "2026-10-17T07:12:40.718Z",
+      "itemCount": 15,
+      "publisherId": "arxiv"
+    },
+    {
+      "id": "europepmc",
+      "name": "Europe PMC · 老龄医疗研究",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=12",
+      "status": "ok",
+      "lastSuccessAt": "2026-10-17T07:12:40.718Z",
+      "itemCount": 12,
+      "publisherId": "europepmc"
+    },
+    {
+      "id": "github-langgraph",
+      "name": "LangGraph · 官方软件发布",
+      "url": "https://api.github.com/repos/langchain-ai/langgraph/releases?per_page=6",
+      "status": "ok",
+      "lastSuccessAt": "2026-10-17T07:12:40.718Z",
+      "itemCount": 6,
+      "publisherId": "langchain"
+    },
+    {
+      "id": "eia-energy",
+      "name": "EIA · Today in Energy",
+      "url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "status": "ok",
+      "lastSuccessAt": "2026-10-17T07:12:40.718Z",
+      "itemCount": 18,
+      "publisherId": "us-eia"
+    }
+  ],
+  "topics": [
+    {
+      "id": "vertical-ai",
+      "label": "行业 AI 与流程软件",
+      "profitHypothesis": "把重复工作交付为可核算的结果，再验证试点费与维护费。",
+      "experiment": "选择一个角色的一项重复工作，访谈3位实际用户；用虚构或已授权样例做演示，核算节省时间，并取得一次付费试点意向。",
+      "stopRule": "没有样例、明确支付者或试点意向时，停止追加开发。"
+    },
+    {
+      "id": "ai-reliability",
+      "label": "AI 评测、成本与可靠性",
+      "profitHypothesis": "围绕上线决策提供评测与成本诊断，需求重复后再验证持续服务。",
+      "experiment": "用20条公开或合成测试样例，对照质量、延迟和费用；访谈3位产品负责人，确认一次发布决策是否需要复测。",
+      "stopRule": "没有真实决策问题、合法样例或愿意付费的负责人时暂停。"
+    },
+    {
+      "id": "global-b2b",
+      "label": "跨境 B2B 与小型软件",
+      "profitHypothesis": "以固定范围的服务或工具解决跨境流程，计入获客、支付与售后成本。",
+      "experiment": "选一种跨境工作角色，访谈3位用户，制作一组英文输入输出样例；测量问题频率和可接受价格。",
+      "stopRule": "需求不能复用、获客成本不明或支持成本超过收入时暂停。"
+    },
+    {
+      "id": "cybersecurity",
+      "label": "安全、权限与合规",
+      "profitHypothesis": "先积累授权范围内的检查、恢复与合规能力，再验证维护服务。",
+      "experiment": "访谈小团队IT负责人，在自有隔离环境演示一次备份恢复或权限梳理，并确认是否存在预算负责人。",
+      "stopRule": "没有授权、恢复能力或确定的交付范围时，不承诺商业交付。"
+    },
+    {
+      "id": "ageing-operations",
+      "label": "老龄服务与机构运营",
+      "profitHypothesis": "围绕机构重复运营流程验证服务，先确认机构还是家属付费。",
+      "experiment": "访谈3位机构运营人员，用虚构资料演示预约或提醒流程，找到预算负责人并测试试点意向。",
+      "stopRule": "支付者不清、必须持续驻场或不具备敏感信息处理条件时暂停。"
+    },
+    {
+      "id": "ai-energy",
+      "label": "能源、储能与算力设施",
+      "profitHypothesis": "从成本分析与行业岗位进入，设备和工程收益必须有真实数据与专业验证。",
+      "experiment": "阅读两份一手行业资料，访谈一位运维人员，用合成账单做成本对照；先核实数据和应用入口。",
+      "stopRule": "没有可信数据与专业指导，或必须先采购设备时，仅保留观察。"
+    },
+    {
+      "id": "deeptech-transfer",
+      "label": "科研转化与深技术",
+      "profitHypothesis": "在成熟团队中积累工程与技术转化能力，先厘清验证门槛及知识产权。",
+      "experiment": "选择一项公开技术和一种替代方案，写一页客户成本、验证条件与知识产权边界，并访谈实际使用者。",
+      "stopRule": "没有成本证据、技术指导或清晰知识产权时，不追加个人创业投入。"
+    }
+  ],
+  "meta": {
+    "intervalHours": 1,
+    "scheduledIntervalHours": 4,
+    "algorithmVersion": "1.0.1",
+    "sourceCount": 10,
+    "successfulSources": 10,
+    "scoreMeaning": "阅读与验证优先级，非盈利概率",
+    "weights": {
+      "recency": 30,
+      "evidence": 25,
+      "convergence": 25,
+      "access": 20
+    }
+  }
+}

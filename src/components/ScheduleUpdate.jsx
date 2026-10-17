@@ -1,0 +1,14 @@
+import { useMemo, useState } from 'react';
+import Modal from './Modal.jsx';
+import update from '../data/schedule-update.json' with { type: 'json' };
+import { previewScheduleUpdate, applyScheduleUpdate } from '../lib/schedule-update.js';
+import { downloadJSON } from '../lib/storage.js';
+import './ScheduleUpdate.css';
+
+export default function ScheduleUpdate({ state, seed, onApply, onClose, blocked }) {
+  const [variant, setVariant] = useState(state.settings.scheduleVariant || 'standard');
+  const [error, setError] = useState('');
+  const preview = useMemo(() => { try { return previewScheduleUpdate(state, seed, variant); } catch(e) { return { error: e.message, changes: [], skippedIds: [], eligibleIds: [], conflicts: [] }; } }, [state, seed, variant]);
+  function apply() { try { const result = applyScheduleUpdate(state, seed, variant); onApply(result); onClose(); } catch(e) { setError(e.message); } }
+  return <Modal title="重新安排自由窗口" onClose={onClose}><div className="schedule-update-body"><p>从 {update.effectiveDate} 起，调整周三下午、周五上午与晚间。既有目标、预算、收藏与完成记录保留；生效日前仍显示原课表。</p><div className="schedule-variants" role="group" aria-label="自由窗口方案">{Object.entries(update.variants).map(([id, plan]) => <button type="button" key={id} aria-pressed={variant === id} className={variant === id ? 'is-selected' : ''} onClick={() => { setVariant(id); setError(''); }}><strong>{plan.label}</strong><span>{plan.summary}</span></button>)}</div><p className="schedule-budget-note">{variant === 'standard' ? '标准版成长窗口 26 h / 周，包含商业验证 1 h；其余恢复。' : '可选版成长窗口 24 h / 周，另预留两次家教合计最多 3 h（含备课）。尚未预约，不预计收入。'}</p><div className="schedule-change-list">{preview.changes.map(change => <article key={change.id}><h3>{['周一','周二','周三','周四','周五','周六','周日'][change.weekday]} {change.start}–{change.end}</h3>{change.segments.map(segment => <p key={segment.start}><span>{segment.start}–{segment.end}</span>{segment.title}</p>)}</article>)}</div>{preview.skippedIds.length ? <div className="inline-note warning"><p>{preview.skippedIds.length} 个已改动或已删除的窗口会保留，不自动替换。可在周历中手动调整。</p></div> : null}{preview.conflicts.length ? <div role="alert" className="inline-note warning"><p>新安排与已有时段重叠，需先处理：</p>{preview.conflicts.slice(0,3).map((c,i) => <p key={i}>{c.date}：{c.a} / {c.b}</p>)}</div> : null}{error || preview.error ? <p className="form-error" role="alert">{error || preview.error}</p> : null}{blocked ? <p role="alert" className="form-error">本地记录有保存/恢复问题，请先到设置处理备份。</p> : null}<p className="hint">自由出勤窗口仍可能有课程项目或提交任务；课程交付优先。新家教须与家长落实具体时间，此处只是可选预留。</p><button type="button" className="text-button" onClick={() => downloadJSON(state)}>先导出当前备份</button><div className="confirmation-actions"><button type="button" className="button secondary" onClick={onClose}>暂不调整</button><button type="button" className="button primary" onClick={apply} disabled={!!blocked || !!preview.error || preview.conflicts.length > 0 || !preview.eligibleIds.length}>应用这套安排</button></div></div></Modal>;
+}

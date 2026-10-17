@@ -1,0 +1,8 @@
+[
+  {"id":"hn-automation","name":"Ask HN · automation","url":"https://hn.algolia.com/api/v1/search_by_date?tags=ask_hn&query=automation&hitsPerPage=20","format":"hn","maxBytes":1000000},
+  {"id":"hn-spreadsheet","name":"Ask HN · spreadsheet","url":"https://hn.algolia.com/api/v1/search_by_date?tags=ask_hn&query=spreadsheet&hitsPerPage=20","format":"hn","maxBytes":1000000},
+  {"id":"hn-paying","name":"Ask HN · willing to pay","url":"https://hn.algolia.com/api/v1/search_by_date?tags=ask_hn&query=willing%20to%20pay&hitsPerPage=20","format":"hn","maxBytes":1000000},
+  {"id":"gh-automation","name":"GitHub issues · automation bounty","url":"https://api.github.com/search/issues?q=is%3Aissue%20automation%20bounty%20in%3Atitle%2Cbody&sort=updated&order=desc&per_page=20","format":"github-issues","maxBytes":1400000},
+  {"id":"gh-spreadsheet","name":"GitHub issues · spreadsheet paid","url":"https://api.github.com/search/issues?q=is%3Aissue%20spreadsheet%20paid%20in%3Atitle%2Cbody&sort=updated&order=desc&per_page=20","format":"github-issues","maxBytes":1400000},
+  {"id":"gh-integration","name":"GitHub issues · integration willing to pay","url":"https://api.github.com/search/issues?q=is%3Aissue%20integration%20%22willing%20to%20pay%22%20in%3Atitle%2Cbody&sort=updated&order=desc&per_page=20","format":"github-issues","maxBytes":1400000}
+]

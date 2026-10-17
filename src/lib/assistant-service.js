@@ -2,6 +2,7 @@ import {IS_PAGES,APP_BASE,storageKey,pagesChatStatus} from './deployment.js';
 import {validateChatStatus} from './chat-client.js';
 import {readRuntimeSession} from './runtime-session.js';
 
+export const ASSISTANT_CONNECTION_WAIT_MS=45000;
 const SESSION_KEY=storageKey('assistant-session-v1');
 const ROUTES={status:'status',session:'session',login:'login',logout:'logout',chat:'chat'};
 let configuredOrigin,memorySession;

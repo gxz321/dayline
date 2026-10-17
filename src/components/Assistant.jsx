@@ -6,7 +6,7 @@ import { nextActions } from '../lib/next-actions.js';
 import WebAI from './WebAI.jsx';
 import Modal from './Modal.jsx';
 import ConnectionPanel from './ConnectionPanel.jsx';
-import {assistantFetch,readAssistantConnection} from '../lib/assistant-service.js';
+import {ASSISTANT_CONNECTION_WAIT_MS,assistantFetch,readAssistantConnection} from '../lib/assistant-service.js';
 import './Assistant.css';
 import './AssistantCalm.css';
 
@@ -55,14 +55,14 @@ export default function Assistant({ state, date, onNavigate, onProposal }) {
   const [chatHeight, setChatHeight] = useState(null);
   const active = useRef(null), statusActive = useRef(null), alive = useRef(true), composing = useRef(false), textarea = useRef(null), end = useRef(null), shell = useRef(null), confirmDialog = useRef(null), clearOpener = useRef(null);
   const ready = !statusError && status?.authenticated && status.allowed && status.configured && status.enabled;
-  const offlinePages=IS_PAGES&&runtime.mode!=='bridge';
+  const offlinePages=IS_PAGES&&runtime.mode==='pages';
   const canSend = ready && status.limits.remaining !== 0;
   const needsLogin=!!status&&!status.authenticated&&(runtime.configured||(runtime.mode==='sites'&&status.configured&&status.enabled));
   const checkStatus = useCallback(async ({force=false}={}) => {
     if (statusActive.current && !force) return;
     statusActive.current?.abort();
     const controller = new AbortController(); statusActive.current = controller; setStatusLoading(true); setStatusError('');
-    const timer = setTimeout(() => controller.abort(), 12000);
+    const timer = setTimeout(() => controller.abort(), ASSISTANT_CONNECTION_WAIT_MS);
     try { const connection=await readAssistantConnection(controller.signal,{force});if(alive.current&&statusActive.current===controller){setStatus(connection.status);setRuntime(connection.session);} }
     catch { if (alive.current && statusActive.current === controller) setStatusError('暂时无法读取服务状态。请稍后检查连接；本机计划仍然可用。'); }
     finally { clearTimeout(timer); if (statusActive.current === controller) { statusActive.current = null; if (alive.current) setStatusLoading(false); } }
@@ -130,7 +130,7 @@ export default function Assistant({ state, date, onNavigate, onProposal }) {
   function quick(value) { if(offlinePages){setWebQuestion(value);setMode('web');return;}setInput(value); textarea.current?.focus(); }
   return <section className="assistant-page assistant-calm" aria-labelledby="assistant-title">
     <header className="assistant-calm-heading"><h1 id="assistant-title">助手</h1><details className="assistant-session-menu"><summary>会话<span aria-hidden="true">⌄</span></summary><div><button type="button" onClick={()=>setConnectionOpen(true)}>{offlinePages?'服务说明':'服务与登录'}</button><button type="button" onClick={download} disabled={!messages.length||busy}>导出对话</button><button type="button" disabled={!messages.length||busy} onClick={()=>{clearOpener.current=document.activeElement;setClearConfirm(true)}}>清空本机对话</button></div></details></header>
-    <div className={`assistant-calm-status ${ready?'is-ready':''}`} aria-label="AI 连接状态"><span className="assistant-state-dot"/><div><strong>{offlinePages?'私人 AI 尚未连接':statusLoading?'正在检查连接':statusError?'暂时无法确认连接':ready?status.limits.remaining===0?'今日对话次数已用完':verified?'已收到真实回复':'模型已配置':needsLogin?'登录后开始对话':status?.authenticated&&status.configured&&status.enabled?'此账号尚未获授权':'尚未连接模型'}</strong><span>{offlinePages?'本机计划工具可直接使用。':statusError?'计划仍可正常使用。':ready?status.limits.remaining===0?'明天恢复使用，今天仍可整理本机计划。':'在这里发送问题，回复后可转成任务。':'连接后，就能在这一页继续聊。'}</span></div><button type="button" onClick={()=>setConnectionOpen(true)}>{offlinePages?'说明':needsLogin?'登录':'配置'}</button></div>
+    <div className={`assistant-calm-status ${ready?'is-ready':''}`} aria-label="AI 连接状态"><span className="assistant-state-dot"/><div><strong>{statusLoading?'正在检查连接':statusError?'暂时无法确认连接':offlinePages?'私人 AI 尚未连接':ready?status.limits.remaining===0?'今日对话次数已用完':verified?'已收到真实回复':'模型已配置':needsLogin?'登录后开始对话':status?.authenticated&&status.configured&&status.enabled?'此账号尚未获授权':'尚未连接模型'}</strong><span>{statusLoading?'首次连接或服务唤醒可能需要片刻，本机计划仍可使用。':statusError?'计划仍可正常使用。':offlinePages?'本机计划工具可直接使用。':ready?status.limits.remaining===0?'明天恢复使用，今天仍可整理本机计划。':'在这里发送问题，回复后可转成任务。':'连接后，就能在这一页继续聊。'}</span></div><button type="button" onClick={()=>setConnectionOpen(true)}>{offlinePages?'说明':needsLogin?'登录':'配置'}</button></div>
     <div className="assistant-chat-shell" ref={shell} style={chatHeight?{height:`${chatHeight}px`}:undefined}>
       <div className="assistant-messages" role="log" aria-label="对话消息" aria-live="polite" aria-relevant="additions" aria-busy={busy}>
         {!messages.length?<div className="assistant-calm-welcome"><h2>想清楚，然后行动。</h2><div><button type="button" onClick={()=>offlinePages?setMode('tools'):quick(QUICK[0])}><Glyph name="spark"/>今天先做什么</button><button type="button" onClick={()=>quick(QUICK[1])}><Glyph name="plus"/>{offlinePages?'整理讨论问题':'一起推敲一个想法'}</button></div></div>:messages.map(message=><Message key={message.id} message={message} onCopy={copy} onProposal={onProposal}/>)}

@@ -1,7 +1,7 @@
 import {useEffect,useRef,useState} from 'react';
 import Modal from './Modal.jsx';
 import './ConnectionPanel.css';
-import {assistantLogin,assistantLogout} from '../lib/assistant-service.js';
+import {ASSISTANT_CONNECTION_WAIT_MS,assistantLogin,assistantLogout} from '../lib/assistant-service.js';
 
 export default function ConnectionPanel({session,status,onCheck,onClose}) {
   const [password,setPassword]=useState(''),[busy,setBusy]=useState(false),[error,setError]=useState('');
@@ -10,12 +10,12 @@ export default function ConnectionPanel({session,status,onCheck,onClose}) {
   async function submit(event,logout=false) {
     event?.preventDefault(); if(request.current) return;
     const controller=new AbortController();request.current=controller;setBusy(true);setError('');
-    const timer=setTimeout(()=>controller.abort(),12000);
+    const timer=setTimeout(()=>controller.abort(),ASSISTANT_CONNECTION_WAIT_MS);
     try {
       const response=await (logout?assistantLogout(controller.signal):assistantLogin(password,controller.signal));
-      if(!response.ok) {setError(response.status===429?'尝试次数较多，请稍后再登录。':response.status===401?'访问密码不正确。':response.status===503?'此站点尚未完成登录配置。':'登录未完成，请检查网络后再试。');return;}
+      if(!response.ok) {setError(response.status===429?'尝试次数较多，请稍后再登录。':response.status===401?'访问密码不正确。':response.status===503?'服务正在启动或暂不可用，请稍后重新检查。':'登录未完成，请检查网络后再试。');return;}
       await onCheck({force:true});onClose();
-    } catch {if(!controller.signal.aborted)setError('连接未完成，请检查网络后再试。');else setError('等待已结束，请重新检查登录状态。');}
+    } catch {if(!controller.signal.aborted)setError('连接未完成，请检查网络后再试。');else setError('等待已结束，可稍后重新检查连接。');}
     finally {clearTimeout(timer);setPassword('');request.current=null;setBusy(false);}
   }
   const standalone=session?.mode==='standalone'||session?.mode==='bridge',sites=session?.mode==='sites',pages=session?.mode==='pages';

@@ -4,7 +4,7 @@
 
 ## 部署
 
-仓库包含 `railway.json` 和 `standalone/Dockerfile`，使用一个实例、一个挂载在 `/var/lib/dayline` 的持久卷。Docker 启动时只调整卷根目录所有者，再切换为 node 用户运行；部署健康检查路径为 `/healthz`。
+仓库包含 `railway.json` 和 `standalone/Dockerfile`，使用一个实例、一个挂载在 `/var/lib/dayline` 的持久卷。Docker 启动时只调整卷根目录所有者，再切换为 node 用户运行；部署健康检查路径为 `/healthz`。容器启动先取得随进程退出自动释放的系统文件锁，只有持锁者可以清理上次崩溃留下的 Node 启动标记，避免持久卷上的旧标记阻止自动恢复。
 
 非敏感环境变量：
 

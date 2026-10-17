@@ -10,7 +10,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: dayline-pages
+  group: pages
   cancel-in-progress: false
 jobs:
   publish:
